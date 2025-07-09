@@ -1,0 +1,64 @@
+.book-section {
+  position: relative;
+  background-image: url('../assets/CKZ_3550.jpg'); /* Replace with your image name */
+  background-size: cover;
+  /* background-position: center; */
+  height: 790px;
+  width: 100%;
+  display: flex;
+  /* align-items: center; 
+  justify-content: center; */
+}
+
+.book-overlay {
+  height: 30%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  /* background: rgba(0, 0, 0, 0.4); */
+  border-radius: 10px;
+
+  /* 👇 Animation */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.book-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.book-subtitle {
+  font-size: 16px;
+  color: #FF0000;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.book-button {
+  padding: 10px 24px;
+  border: 2px solid black;
+  background: transparent;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.book-button:hover {
+  background: black;
+  color: white;
+}

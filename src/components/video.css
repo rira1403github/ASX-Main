@@ -1,0 +1,20 @@
+.video-section {
+  position: relative;
+  width: auto;
+  padding: 20px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-player {
+  width: 100%;
+  /* max-width: none; */
+  aspect-ratio: 16 / 9;
+  /* border: 1px solid #00bfff; */
+  border-radius: 8px;
+  background-color: black;
+  box-shadow: 0 4px 12px rgba(0, 191, 255, 0.2);
+}
+

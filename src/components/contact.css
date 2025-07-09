@@ -1,0 +1,31 @@
+.contact-section {
+  background-color: white;
+  padding: 30px 20px;
+  border: 2px solid #2196f3; /* Blue border like screenshot */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+.contact-label {
+  color: black;
+}
+
+.contact-icon {
+  font-size: 20px;
+  color: black;
+}
