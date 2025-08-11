@@ -8,6 +8,7 @@ import Contact from './components/contact';
 import Footer from './components/footer';
 import BookRide from './pages/bookRide';
 import Experience from './pages/experience';
+import PageContact from './pages/pageContact';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         />
         <Route path="/bookride" element={<BookRide />} />
         <Route path="/experience" element={<Experience />} />
+        <Route path="/pageContact" element={<PageContact />} />
       </Routes>
     </Router>
   );

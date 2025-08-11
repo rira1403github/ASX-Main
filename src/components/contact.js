@@ -14,7 +14,7 @@ const Contact = () => {
   return (
     <div className="contact-section">
       {menuItems.map((item, index) => (
-        <div className="contact-item" key={index}>
+        <div className="contact-item" key={index} style={{ animationDelay: `${index * 0.1}s` }}>
           <span className="contact-label">{item}</span>
           <FiChevronRight className="contact-icon" />
         </div>

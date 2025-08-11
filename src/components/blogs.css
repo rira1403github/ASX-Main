@@ -1,0 +1,197 @@
+.blog-section {
+  background-color: black;
+  color: white;
+  padding: 40px;
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+.red {
+  color: #FF0000;
+  font-weight: bold;
+}
+
+.blog-carousel-wrapper {
+  max-width: 900px;
+  margin: auto;
+}
+
+.blog-carousel {
+  text-align: center;
+}
+
+.carousel-slide {
+  background-color: #121212;
+  border-radius: 10px;
+  color: #f9f8f5;
+  padding: 40px;
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 850px;
+  margin: auto;
+  opacity: 0;
+}
+
+.carousel-slide.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.carousel-image img {
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.carousel-text {
+  flex: 1;
+  text-align: justify;
+  max-width: 400px;
+}
+
+.carousel-text h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.carousel-text p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.read-more-btn {
+  color: #FF0000;
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0;
+  text-decoration: none;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: white;
+  opacity: 0.75;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #FF0000;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #FF0000;
+  font-size: 26px;
+}
+
+.faq-section {
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #555;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.faq-answer {
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.testimonial {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.testimonial h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #888;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .carousel-slide {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .carousel-text {
+    max-width: 100%;
+    padding: 0;
+  }
+  
+  .carousel-image img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .carousel-slide {
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    padding: 0px;
+    gap: 20px;
+  }
+  
+  .carousel-text {
+    max-width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .carousel-image img {
+    max-width: 100%;
+  }
+}

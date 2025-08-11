@@ -1,0 +1,175 @@
+.pageContact-section {
+  background-color: hsl(0, 0%, 98%);
+  color: #fff;
+  text-align: center;
+  padding: 150px 40px; 
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pageContact-title {
+  font-size: 45px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: black;
+}
+
+.pageContact-divider {
+  width: 60%;
+  margin: 20px auto;
+  border: none;
+  height: 2px;
+  background-color: rgb(34, 33, 33);
+}
+
+.pageContact-subtext {
+  font-size: 25px;
+  max-width: 800px;
+  margin: 0 auto 60px;
+  line-height: 1.6;
+  color: black;
+}
+
+.pageContact-cards {
+  border-radius: 15px;
+  align-items: center;
+  display: flex;
+  background-color: #000;
+  padding: 80px 40px;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.pageContact-card {
+  position: relative;
+  border: 1px solid #ddd;
+  padding: 40px 30px;
+  border-radius: 12px;
+  align-items: center;
+  width: 300px;
+  height: 180px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  text-align: center;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.pageContact-card::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, #fff, transparent 70%);
+  transform: rotate(45deg);
+  transition: all 0.6s ease;
+  z-index: -1;
+}
+
+.pageContact-card:hover::before {
+  top: -50%;
+  left: -50%;
+}
+
+.pageContact-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 18px 40px rgba(0, 191, 255, 0.25);
+  border-color: rgb(99, 11, 11),;
+}
+
+.pageContact-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: red;
+  transition: transform 0.3s ease;
+}
+
+.pageContact-card:hover .pageContact-icon {
+  transform: scale(1.15) translateY(-5px);
+}
+
+.pageContact-card p {
+  font-size: 20px;
+  color: rgb(99, 11, 11);
+  margin: 0;
+  opacity: 0.9;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.pageContact-card:hover p {
+  opacity: 1;
+}
+
+.pageContact-card p a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.2s ease;
+}
+
+.pageContact-card p a:hover {
+  color: rgb(158, 11, 11);
+  font-weight: 600;
+  font-size: 22px;
+}
+
+@media (max-width: 1024px) {
+  .pageContact-title {
+    font-size: 38px;
+  }
+
+  .pageContact-subtext {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pageContact-cards {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+
+  .pageContact-card {
+    width: 85%;
+  }
+
+  .pageContact-title {
+    font-size: 32px;
+  }
+
+  .pageContact-subtext {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .pageContact-section {
+    padding: 100px 25px 60px 5px;
+  }
+
+  .pageContact-title {
+    font-size: 26px;
+  }
+
+  .pageContact-subtext {
+    font-size: 16px;
+  }
+
+  .pageContact-card p {
+    font-size: 16px;
+  }
+
+  .pageContact-icon {
+    font-size: 40px;
+  }
+}
