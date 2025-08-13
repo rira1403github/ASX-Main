@@ -1,7 +1,7 @@
 .footer-section {
   background-color: black;
   color: white;
-  padding: 60px 30px 40px;
+  padding: 40px 30px 15px;
   font-family: 'Helvetica Neue', sans-serif;
   width: 100%;
   box-sizing: border-box;
@@ -39,7 +39,7 @@
 .footer-col-links {
   list-style: none;
   padding: 0;
-  max-height: 1000px;
+  max-height: none;
   overflow: hidden;
   transition: max-height 0.4s ease;
 }
@@ -141,9 +141,7 @@
   }
 }
 
-
 @media (max-width: 480px) {
-
 .social-item {
   font-weight: 600;
   font-size: 11px;
@@ -166,4 +164,3 @@
   max-height: 1000px;
 }
 }
-

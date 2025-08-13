@@ -9,6 +9,8 @@ import Footer from './components/footer';
 import BookRide from './pages/bookRide';
 import Experience from './pages/experience';
 import PageContact from './pages/pageContact';
+import AboutUs from './pages/aboutUs';
+import Events from './pages/events';
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
         <Route path="/bookride" element={<BookRide />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/pageContact" element={<PageContact />} />
+        <Route path="/aboutUs" element={<AboutUs />} />
+        <Route path="/events" element={<Events />} />
       </Routes>
     </Router>
   );

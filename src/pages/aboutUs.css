@@ -1,0 +1,105 @@
+.about-section {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 120px 40px;
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.about-title {
+  font-size: clamp(28px, 4vw, 45px);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #f9f8f5;
+}
+
+.about-divider {
+  width: 50%;
+  margin: 20px auto 30px;
+  border: none;
+  height: 2px;
+  background-color: rgb(87, 84, 84);
+}
+
+.about-subtext {
+  font-size: clamp(16px, 2vw, 22px);
+  max-width: 900px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.highlight {
+  color: #ff4c4c;
+  font-weight: bold;
+}
+
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.about-card {
+  position: relative;
+  padding: 40px 30px;
+  border-radius: 12px;
+  width: 300px;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.about-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 18px 40px rgba(255, 76, 76, 0.25);
+}
+
+.about-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #ff4c4c;
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover .about-icon {
+  transform: scale(1.15) translateY(-5px);
+}
+
+.about-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.about-card p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .about-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-card {
+    width: 85%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 100px 20px;
+  }
+  .about-card {
+    width: 250px;
+  }
+}

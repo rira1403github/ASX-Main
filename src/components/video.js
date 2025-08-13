@@ -7,7 +7,7 @@ const Video = () => {
     <div className="video-section">
       <video
         className="video-player"
-        controls
+        // controls
         autoPlay
         loop
         muted

@@ -3,9 +3,6 @@ import './footer.css';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import {  FaXTwitter } from 'react-icons/fa6';
 import { FaChevronUp, FaChevronDown } from "react-icons/fa";
-// import { SiTiktok } from 'react-icons/si';
-// import { FaPlus, FaMinus } from 'react-icons/fa';
-
 const Footer = () => {
   const [openIndex, setOpenIndex] = useState(null);
 

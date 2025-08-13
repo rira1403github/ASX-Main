@@ -1,48 +1,25 @@
 .book-ride-section {
   background-color: #000;
-  padding: 150px 20px;
+  padding: clamp(100px, 8vw, 150px) 20px clamp(60px, 8vw, 150px);
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: clamp(30px, 6vw, 60px);
   width: 100%;
-  animation: fadeInUp 1s ease-in-out;
   align-items: center;
   box-sizing: border-box;
 }
 
-/* ===== ENTRY ANIMATION ===== */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* ===== RIDE CARD ===== */
 .ride-card {
   display: flex;
   flex-direction: column;
   background-color: #111;
   color: #fff;
   width: 100%;
-  max-width: 1200px;
+  max-width: none;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 8px 28px rgba(255, 255, 255, 0.05);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  opacity: 0;
-  animation: cardFade 0.9s ease forwards;
-}
-
-@keyframes cardFade {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  transition: transform 0.4s ease, box-shadow 0.4s ease;;
 }
 
 .ride-card:hover {
@@ -50,9 +27,9 @@
   box-shadow: 0 12px 35px rgba(255, 255, 255, 0.08);
 }
 
-/* ===== RIDE IMAGE ===== */
 .ride-image {
   width: 100%;
+  overflow: hidden;
 }
 
 .ride-image img {
@@ -60,17 +37,20 @@
   height: auto;
   object-fit: cover;
   display: block;
-  border-radius: 12px 12px 0 0;
+  transition: transform 0.5s ease;
 }
 
-/* ===== CONTENT ===== */
+.ride-card:hover .ride-image img {
+  transform: scale(1.05);
+}
+
 .ride-content {
-  padding: 30px 20px;
+  padding: clamp(16px, 3vw, 40px);
   width: 100%;
 }
 
 .ride-title {
-  font-size: 26px;
+  font-size: clamp(18px, 3vw, 30px);
   font-weight: 600;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -79,30 +59,32 @@
 }
 
 .ride-subtitle {
-  font-size: 16px;
+  font-size: clamp(13px, 1.8vw, 16.5px);
   color: #ccc;
   margin-bottom: 18px;
 }
 
 .ride-description {
-  font-size: 15px;
+  font-size: clamp(13px, 1.6vw, 15px);
   line-height: 1.6;
   margin-bottom: 25px;
+  text-align: justify;
   color: #bbb;
 }
 
-/* ===== BOOK BUTTON ===== */
 .book-btn {
-  padding: 12px 28px;
+  padding: clamp(10px, 1.5vw, 12px) clamp(20px, 3vw, 28px);
   border: 2px solid #fff;
   background: transparent;
   color: #fff;
+  font-size: clamp(12px, 1.4vw, 14px);
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
   border-radius: 6px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  width: fit-content;
 }
 
 .book-btn:hover {
@@ -111,96 +93,51 @@
   transform: scale(1.03);
 }
 
-/* ===== TABLETS & DESKTOPS ===== */
+.ride-cards-desktop {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+
+.ride-cards-mobile {
+  display: none;
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .ride-card {
     flex-direction: row;
   }
-
   .ride-image {
     flex: 1;
     max-height: 400px;
   }
-
   .ride-image img {
     height: 100%;
     border-radius: 12px 0 0 12px;
   }
-
   .ride-content {
     flex: 1;
-    padding: 40px;
-  }
-
-  .ride-title {
-    font-size: 30px;
-  }
-
-  .ride-subtitle,
-  .ride-description {
-    font-size: 16.5px;
   }
 }
 
-/* ===== SMALL SCREENS ===== */
 @media (max-width: 767px) {
+  .ride-cards-desktop {
+    display: none;
+  }
+  .ride-cards-mobile {
+    display: block;
+  }
+  .ride-content {
+   width: 91%;
+  }
   .ride-card {
     flex-direction: column;
   }
-
   .ride-image img {
     border-radius: 12px 12px 0 0;
   }
-
-  .ride-content {
-    padding: 20px 16px;
-  }
-
-  .ride-title {
-    font-size: 22px;
-  }
-
-  .ride-subtitle {
-    font-size: 14px;
-  }
-
-  .ride-description {
-    font-size: 14px;
-  }
-
-  .book-btn {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-
-
-@media screen and (max-width: 480px) {
-  .ride-card {
-    flex-direction: column;
-  }
-
-  .ride-image img {
-    border-radius: 12px 12px 0 0;
-  }
-
-  .ride-content {
-    padding: 20px 8px;
-  }
-
-  .ride-title {
-    font-size: 22px;
-  }
-
-  .ride-subtitle {
-    font-size: 14px;
-  }
-
-  .ride-description {
-    font-size: 14px;
-  }
-
   .book-btn {
     width: 100%;
     text-align: center;

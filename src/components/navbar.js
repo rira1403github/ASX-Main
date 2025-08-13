@@ -1,11 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FiMenu, FiSearch, FiX } from 'react-icons/fi';
 import { Link as RouterLink } from 'react-router-dom';
-import { Link as ScrollLink } from 'react-scroll';
+// import { Link as ScrollLink } from 'react-scroll';
 import './navbar.css';
 import logo from '../assets/logo.png';
- 
-
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -60,12 +58,15 @@ const Navbar = () => {
             <RouterLink to="/bookride" className="menu-scroll-link">BOOK MY RIDE</RouterLink>
           </li>
           <li className="slide-in-item" style={{ animationDelay: `0.4s` }} onClick={closeMenu}>
-            <RouterLink to="/experience" className="menu-scroll-link">Experience Ashva</RouterLink>
+            <RouterLink to="/experience" className="menu-scroll-link">EXPERIENCE ASHVA</RouterLink>
           </li>
           <li className="slide-in-item" style={{ animationDelay: `0.5s` }} onClick={closeMenu}>
-            <span className="menu-scroll-link">GET A RIDE</span>
+            <RouterLink to="/Events" className="menu-scroll-link">EVENTS</RouterLink>
           </li>
-          <li className="slide-in-item" style={{ animationDelay: `0.6s` }}>
+          <li className="slide-in-item" style={{ animationDelay: `0.6s` }} onClick={closeMenu}>
+            <RouterLink to="/aboutUs" className="menu-scroll-link">ABOUT US</RouterLink>
+          </li>
+          {/* <li className="slide-in-item" style={{ animationDelay: `0.6s` }}>
             <ScrollLink
               to="book"
               smooth={true}
@@ -76,24 +77,9 @@ const Navbar = () => {
             >
               ABOUT US
             </ScrollLink>
-          </li>
-          {/* <li className="slide-in-item" style={{ animationDelay: `0.7s` }}>
-            <ScrollLink
-              to="contact"
-              smooth={true}
-              offset={-70}
-              duration={500}
-              onClick={closeMenu}
-              className="menu-scroll-link"
-            >
-              CONTACT US
-            </ScrollLink>
           </li> */}
           <li className="slide-in-item" style={{ animationDelay: `0.7s` }} onClick={closeMenu}>
-            <RouterLink to="/pageContact" className="menu-scroll-link">Contact Us</RouterLink>
-          </li>
-          <li className="slide-in-item" style={{ animationDelay: `0.8s` }} onClick={closeMenu}>
-            <RouterLink to="/" className="menu-scroll-link">Contact Us</RouterLink>
+            <RouterLink to="/pageContact" className="menu-scroll-link">CONTACT US</RouterLink>
           </li>
         </ul>
       </div>
