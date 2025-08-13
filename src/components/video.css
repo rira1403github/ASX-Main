@@ -42,3 +42,9 @@
     height: auto;
   }
 }
+
+@media (max-width: 480px) {
+  .video-section {
+    padding: 70px 0px 30px;
+  }
+}

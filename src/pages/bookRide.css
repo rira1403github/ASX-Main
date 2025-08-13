@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   background-color: #111;
+  padding-bottom: 20px;
   color: #fff;
   width: 100%;
   max-width: none;
@@ -25,6 +26,17 @@
 .ride-card:hover {
   transform: scale(1.02);
   box-shadow: 0 12px 35px rgba(255, 255, 255, 0.08);
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.5); 
+  opacity: 1; 
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff4040; 
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
 
 .ride-image {

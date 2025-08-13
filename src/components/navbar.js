@@ -40,7 +40,9 @@ const Navbar = () => {
           {isMenuOpen ? <FiX /> : <FiMenu />}
         </div>
         <div className="navbar-logo">
+          <a href='/'>
           <img src={logo} alt="ASX Logo" />
+          </a>
         </div>
         <div className="navbar-icon">
           <FiSearch />

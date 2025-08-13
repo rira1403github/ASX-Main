@@ -70,7 +70,7 @@
 
 .form-group input:focus {
   border: 2px solid transparent;
-  background-image: linear-gradient(black, black), linear-gradient(90deg, #00ffff, #ff00ff);
+  background-image: linear-gradient(black, black), linear-gradient(90deg, #ccc, #f2f6f6, #ccc);
   background-origin: border-box;
   background-clip: padding-box, border-box;
   box-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
