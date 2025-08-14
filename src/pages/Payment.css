@@ -160,6 +160,10 @@
 .expiry-cvv {
   display: flex;
   gap: 10px;
+}  
+
+.expiry-cvv input {
+  width: 44%;
 }
 
 @media (max-width: 600px) {
