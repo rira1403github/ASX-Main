@@ -6,6 +6,8 @@
   min-height: 80vh;
   padding: 40px 20px;
   font-family: 'Poppins', sans-serif;
+  max-width: 500px;
+  margin: auto;
 }
 
 .payment-title {
@@ -68,57 +70,6 @@
   margin-top: 2px;
 }
 
-.payment-container {
-  max-width: 500px;
-  margin: auto;
-  padding: 20px;
-}
-
-.payment-title {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.payment-section {
-  margin-bottom: 20px;
-}
-
-.payment-category {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.payment-option {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-bottom: 10px;
-  transition: all 0.3s ease;
-}
-
-.payment-option.selected {
-  border-color: #ff0000;
-  background: rgba(0, 123, 255, 0.1);
-}
-
-.payment-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.payment-method {
-  font-weight: 600;
-}
-
-.payment-subtitle {
-  font-size: 14px;
-  color: gray;
-}
-
 .proceed-button {
   width: 100%;
   padding: 12px;
@@ -131,10 +82,93 @@
   cursor: pointer;
 }
 
+.menu-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  background: #000;
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu-bar h3, .menu-bar h4 {
+  margin: 0;
+}
+
+.close-btn {
+  background: none;
+  color: white;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.upi-option {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  background: rgba(255,255,255,0.05);
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.upi-option img {
+  width: 32px;
+  height: 32px;
+}
+
+.upi-option-II {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.05);
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.upi-option-II img {
+  width: 50px;
+  height: 28px;
+}
+
+.upi-input, .menu-bar input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #555;
+  background: transparent;
+  color: white;
+}
+
+.verify-btn, .continue-btn {
+  background: #ff0000;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.expiry-cvv {
+  display: flex;
+  gap: 10px;
+}
+
 @media (max-width: 600px) {
   .payment-container {
     min-height: 60vh;
     max-width: 400px;
+  }
+  .menu-bar {
+    width: 90%;
   }
 }
 
@@ -142,5 +176,8 @@
   .payment-container {
     max-width: 350px;
     height: 80vh;
+  }
+  .menu-bar {
+    width: 90%;
   }
 }
