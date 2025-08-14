@@ -3,7 +3,6 @@ import './pageContact.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FiPhone, FiMail, FiCompass } from 'react-icons/fi';
-import Footer from '../components/footer';
 
 const PageContact = () => {
   useEffect(() => {
@@ -44,7 +43,6 @@ const PageContact = () => {
         </div>
       </div>
     </section>
-    <Footer />
     </>
   );
 };

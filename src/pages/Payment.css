@@ -1,0 +1,145 @@
+.payment-container {
+  position: relative;
+  top: 6rem;
+  background-color: #000;
+  color: white;
+  min-height: 80vh;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.payment-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.payment-category {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.payment-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.payment-option:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.payment-option.selected {
+  border: 1px solid #ff0000;
+  background: rgba(255, 152, 0, 0.15);
+}
+
+.payment-option input {
+  margin-top: 2px;
+  accent-color: #ff0000;
+}
+
+.payment-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-method {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.payment-subtitle {
+  font-size: 0.8rem;
+  color: #ccc;
+  margin-top: 2px;
+}
+
+.payment-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+
+.payment-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.payment-section {
+  margin-bottom: 20px;
+}
+
+.payment-category {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.payment-option.selected {
+  border-color: #ff0000;
+  background: rgba(0, 123, 255, 0.1);
+}
+
+.payment-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-method {
+  font-weight: 600;
+}
+
+.payment-subtitle {
+  font-size: 14px;
+  color: gray;
+}
+
+.proceed-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: #ff0000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .payment-container {
+    min-height: 62vh;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .payment-container {
+    max-width: 350px;
+  }
+}

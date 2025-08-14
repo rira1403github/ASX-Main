@@ -7,8 +7,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "./bookRide.css";
 import rideImage from "../assets/CKZ_3773.jpg";
-import Contact from "../components/contact";
-import Footer from "../components/footer";
 
 const fetchRideData = () => {
   return Promise.resolve([
@@ -125,9 +123,6 @@ const BookRide = () => {
         <h2 className="red">Booking Form</h2>
         <p style={{ color: "#ccc" }}>Replace this with your actual form</p>
       </section> */}
-
-      <Contact />
-      <Footer />
     </>
   );
 };

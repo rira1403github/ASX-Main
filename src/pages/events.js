@@ -1,43 +1,7 @@
-// import React, { useEffect } from "react";
-// import "./events.css";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
-// import Contact from '../components/contact';
-// import Footer from '../components/footer';
-
-// const EventPage = () => {
-//   useEffect(() => {
-//     AOS.init({ duration: 800, once: true });
-//   }, []);
-
-//   return (
-//     <div className="event-page">
-//       <section className="event-hero">
-//         <div className="hero-overlay">
-//           <h1 className="hero-title" data-aos="fade-up">ASX MOTO DROME 2025</h1>
-//           <p className="hero-date" data-aos="fade-up" data-aos-delay="200">BENGALURU, India</p>
-//         </div>
-//       </section>
-//        <div>
-//           <Contact />
-//           <Footer />
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default EventPage;
-
-
-
-
-
 import React, { useEffect } from "react";
 import "./events.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Contact from '../components/contact';
-import Footer from '../components/footer';
 
 const EventPage = () => {
   useEffect(() => {
@@ -77,11 +41,6 @@ const EventPage = () => {
           <button className="event-btn">GET ENQUIRE</button>
         </div>
       </section>
-
-      <div>
-        <Contact />
-        <Footer />
-      </div>
     </div>
   );
 };

@@ -3,7 +3,6 @@ import './aboutUs.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FiTarget, FiAward, FiUsers } from 'react-icons/fi';
-import Footer from '../components/footer';
 
 const AboutUs = () => {
   useEffect(() => {
@@ -51,8 +50,6 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
     </>
   );
 };

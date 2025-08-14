@@ -1,22 +1,78 @@
+// import React from 'react';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import Navbar from './components/navbar';
+// import Video from './components/video';
+// import Book from './components/book';
+// import Blog from './components/blogs';
+// import Contact from './components/contact';
+// import Footer from './components/footer';
+// import BookRide from './pages/bookRide';
+// import Experience from './pages/experience';
+// import PageContact from './pages/pageContact';
+// import AboutUs from './pages/aboutUs';
+// import Events from './pages/events';
+
+// function App() {
+//   return (
+//     <Router>
+//       <Navbar />
+//       <Routes>
+//         <Route
+//           path="/"
+//           element={
+//             <>
+//               <Video />
+//               <section id="book">
+//                 <Book />
+//               </section>
+//               <Blog />
+//               <section id="contact">
+//                 <Contact />
+//               </section>
+//               <Footer />
+//             </>
+//           }
+//         />
+//         <Route path="/bookride" element={<BookRide />} />
+//         <Route path="/experience" element={<Experience />} />
+//         <Route path="/pageContact" element={<PageContact />} />
+//         <Route path="/aboutUs" element={<AboutUs />} />
+//         <Route path="/events" element={<Events />} />
+//       </Routes>
+//     </Router>
+//   );
+// }
+
+// export default App;
+
+
+
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Navbar from './components/navbar';
 import Video from './components/video';
 import Book from './components/book';
 import Blog from './components/blogs';
 import Contact from './components/contact';
 import Footer from './components/footer';
+
 import BookRide from './pages/bookRide';
 import Experience from './pages/experience';
 import PageContact from './pages/pageContact';
 import AboutUs from './pages/aboutUs';
 import Events from './pages/events';
+import Payment from './pages/Payment';
+
+
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
+       
         <Route
           path="/"
           element={
@@ -25,7 +81,9 @@ function App() {
               <section id="book">
                 <Book />
               </section>
-              <Blog />
+              <section id="blog">
+                <Blog />
+              </section>
               <section id="contact">
                 <Contact />
               </section>
@@ -33,11 +91,67 @@ function App() {
             </>
           }
         />
-        <Route path="/bookride" element={<BookRide />} />
-        <Route path="/experience" element={<Experience />} />
-        <Route path="/pageContact" element={<PageContact />} />
-        <Route path="/aboutUs" element={<AboutUs />} />
-        <Route path="/events" element={<Events />} />
+
+        <Route
+          path="/bookride"
+          element={
+            <>
+              <BookRide />
+              <Contact />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/experience"
+          element={
+            <>
+              <Experience />
+              <Contact />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/pageContact"
+          element={
+            <>
+              <PageContact />
+              <Contact />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/aboutUs"
+          element={
+            <>
+              <AboutUs />
+              <Contact />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/events"
+          element={
+            <>
+              <Events />
+              <Contact />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/payment"
+          element={
+            <>
+              <Payment />
+              <Contact />
+              <Footer />
+            </>
+          }
+        />
       </Routes>
     </Router>
   );
