@@ -138,16 +138,9 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   .payment-container {
     max-width: 350px;
-    height: 68vh;
-  }
-}
-
-@media (max-width: 400px) {
-  .payment-container {
-    max-width: 350px;
-    height: 75vh;
+    height: 80vh;
   }
 }
