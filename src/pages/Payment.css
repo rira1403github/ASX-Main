@@ -133,13 +133,21 @@
 
 @media (max-width: 600px) {
   .payment-container {
-    min-height: 62vh;
+    min-height: 60vh;
     max-width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  .payment-container {
+    max-width: 350px;
+    height: 68vh;
   }
 }
 
 @media (max-width: 400px) {
   .payment-container {
     max-width: 350px;
+    height: 75vh;
   }
 }
