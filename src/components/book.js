@@ -5,9 +5,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { useNavigate } from 'react-router-dom'; 
 import './book.css';
 
 const Book = () => {
+  const navigate = useNavigate(); 
+
   useEffect(() => {
     AOS.init({ once: true, duration: 1000 });
   }, []);
@@ -50,7 +53,12 @@ const Book = () => {
               <div className="book-overlay" data-aos="fade-up">
                 <h1 className="book-title">{slide.title}</h1>
                 <p className="book-subtitle">{slide.subtitle}</p>
-                <button className="book-button">BOOK YOUR EXPERIENCE</button>
+                <button
+                  className="book-button"
+                  onClick={() => navigate('/experience')}
+                >
+                  BOOK YOUR EXPERIENCE
+                </button>
               </div>
             </div>
           </SwiperSlide>

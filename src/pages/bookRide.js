@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Link as ScrollLink } from "react-scroll";
+// import { Link as ScrollLink } from "react-scroll";
+import { useNavigate } from 'react-router-dom'; 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -30,6 +31,7 @@ const fetchRideData = () => {
 
 const BookRide = () => {
   const [rides, setRides] = useState([]);
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     fetchRideData().then((data) => setRides(data));
@@ -69,15 +71,14 @@ const BookRide = () => {
                 </motion.h2>
                 <p className="ride-subtitle">{ride.subtitle}</p>
                 <p className="ride-description">{ride.description}</p>
-                <ScrollLink to="bookingForm" smooth duration={500}>
                   <motion.button
                     className="book-btn"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
+                    onClick={() => navigate('/experience')}
                   >
                     BOOK NOW
                   </motion.button>
-                </ScrollLink>
               </div>
             </motion.div>
           ))}
@@ -107,9 +108,14 @@ const BookRide = () => {
                     <h2 className="ride-title red">{ride.title}</h2>
                     <p className="ride-subtitle">{ride.subtitle}</p>
                     <p className="ride-description">{ride.description}</p>
-                    <ScrollLink to="bookingForm" smooth duration={500}>
-                      <button className="book-btn">BOOK NOW</button>
-                    </ScrollLink>
+                  <motion.button
+                    className="book-btn"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    onClick={() => navigate('/experience')}
+                  >
+                    BOOK NOW
+                  </motion.button>
                   </div>
                 </motion.div>
               </SwiperSlide>
