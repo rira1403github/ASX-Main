@@ -8,7 +8,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "./bookRide.css";
 import rideImage from "../assets/CKZ_3773.jpg";
-
 const fetchRideData = () => {
   return Promise.resolve([
     {

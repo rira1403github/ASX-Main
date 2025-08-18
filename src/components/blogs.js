@@ -1,13 +1,19 @@
 import React, { useState, useEffect } from 'react';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
 import Slider from 'react-slick';
 import './blogs.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "swiper/css";
+
+import "swiper/css";
+import "swiper/css/pagination";
 
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
   const [openIndex, setOpenIndex] = useState(null);
-  const [testimonialIndex, setTestimonialIndex] = useState(0);
+  // const [testimonialIndex, setTestimonialIndex] = useState(0);
   const [activeSlide, setActiveSlide] = useState(0);
 
   const testimonials = [
@@ -98,7 +104,8 @@ const Blog = () => {
           >
             <div className="faq-question">
               {question}
-              <span>{openIndex === index ? '▲' : '▼'}</span>
+              <span>{openIndex === index ? '∧' : '∨'}</span>
+              {/* ▼ ▲ */}
             </div>
             <div
               className="faq-answer"
@@ -115,7 +122,7 @@ const Blog = () => {
       </div>
 
       <h2 className="section-title red">TESTIMONIAL</h2>
-      <div className="testimonial">
+      {/* <div className="testimonial">
         <h3>{testimonials[testimonialIndex]}</h3>
         <div className="dots">
           {testimonials.map((_, index) => (
@@ -126,7 +133,24 @@ const Blog = () => {
             ></span>
           ))}
         </div>
-      </div>
+      </div> */}
+      <div className="testimonial">
+      <Swiper
+        modules={[Pagination]}
+        pagination={{ clickable: true }}
+        spaceBetween={30}
+        slidesPerView={1}
+        allowTouchMove={true}   
+        autoplay={true}   
+        loop={true}       
+      >
+        {testimonials.map((item, index) => (
+          <SwiperSlide key={index}>
+            <h3>{item}</h3>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
     </div>
   );
 };

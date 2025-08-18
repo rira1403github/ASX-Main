@@ -7,6 +7,7 @@ import Book from './components/book';
 import Blog from './components/blogs';
 import Contact from './components/contact';
 import Footer from './components/footer';
+import Map from './components/map';
 
 import BookRide from './pages/bookRide';
 import Experience from './pages/experience';
@@ -33,6 +34,9 @@ function App() {
                 <Video />
               <section id="blog">
                 <Blog />
+              </section>
+              <section id="map">
+                <Map />
               </section>
               <section id="contact">
                 <Contact />
