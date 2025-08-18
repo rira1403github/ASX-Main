@@ -6,14 +6,11 @@ import './blogs.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "swiper/css";
-
-import "swiper/css";
 import "swiper/css/pagination";
 
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
   const [openIndex, setOpenIndex] = useState(null);
-  // const [testimonialIndex, setTestimonialIndex] = useState(0);
   const [activeSlide, setActiveSlide] = useState(0);
 
   const testimonials = [

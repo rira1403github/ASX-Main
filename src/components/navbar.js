@@ -54,13 +54,13 @@ const Navbar = () => {
           <FiX />
         </div>
 
-        <h2 className="menu-title red">MENU</h2>
+        <h2 className="menu-title red">MENU</h2>  
         <ul className="menu-links">
           <li className="slide-in-item" style={{ animationDelay: `0.3s` }} onClick={closeMenu}>
-            <RouterLink to="/bookride" className="menu-scroll-link">BOOK MY RIDE</RouterLink>
+            <RouterLink to="/bookride" className="menu-scroll-link">OUR PACKAGES</RouterLink>
           </li>
           <li className="slide-in-item" style={{ animationDelay: `0.4s` }} onClick={closeMenu}>
-            <RouterLink to="/experience" className="menu-scroll-link">EXPERIENCE ASHVA</RouterLink>
+            <RouterLink to="/experience" className="menu-scroll-link">OUR OFFERS</RouterLink>
           </li>
           <li className="slide-in-item" style={{ animationDelay: `0.5s` }} onClick={closeMenu}>
             <RouterLink to="/Events" className="menu-scroll-link">EVENTS</RouterLink>
@@ -74,6 +74,7 @@ const Navbar = () => {
               smooth={true}
               offset={-70}
               duration={500}
+              duration={}
               onClick={closeMenu}
               className="menu-scroll-link"
             >

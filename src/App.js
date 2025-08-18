@@ -8,6 +8,8 @@ import Blog from './components/blogs';
 import Contact from './components/contact';
 import Footer from './components/footer';
 import Map from './components/map';
+import OurPackages from './components/OurPackages';
+import OurEvents from './components/Ourevents';
 
 import BookRide from './pages/bookRide';
 import Experience from './pages/experience';
@@ -32,6 +34,12 @@ function App() {
                 <Book />
               </section>
                 <Video />
+                <section id="OurPackages">
+                <OurPackages />
+              </section>
+              <section id="OurEvents">
+                <OurEvents />
+              </section>
               <section id="blog">
                 <Blog />
               </section>
