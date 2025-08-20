@@ -13,7 +13,7 @@
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: #f9f8f5;
+  color: #ff0000;
 }
 
 .about-divider {
@@ -26,6 +26,7 @@
 
 .about-subtext {
   font-size: clamp(16px, 2vw, 22px);
+  text-align: justify;
   max-width: 900px;
   margin: 0 auto 40px;
   line-height: 1.6;

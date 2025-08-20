@@ -4,9 +4,11 @@
   padding: 40px 30px 15px;
   font-family: 'Helvetica Neue', sans-serif;
   width: 100%;
-  box-sizing: border-box;
   overflow-x: hidden;
   text-align: justify;
+  margin: auto;
+  box-sizing: border-box;
+  max-width: 1440px;
 }
 
 .footer-columns {

@@ -1,7 +1,6 @@
 .video-section {
   position: relative;
   width: 100%;
-  max-width: none;
   padding: 60px 0px 20px;
   background-color: black;
   display: flex;
@@ -30,6 +29,7 @@
 }
 
 .video-player {
+  max-width: 1440px;
   width: 90%;
   height: 90%;
   object-fit: cover;

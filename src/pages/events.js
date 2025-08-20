@@ -2,47 +2,82 @@ import React, { useEffect } from "react";
 import "./events.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import img1 from "../assets/Events/EI-1.png";
+import img2 from "../assets/Events/EI-2.png";
+import img3 from "../assets/Events/EI-3.png";
+import { Link } from "react-router-dom";
 
-const EventPage = () => {
+const Events = () => {
   useEffect(() => {
-    AOS.init({ duration: 800, once: true });
+    AOS.init({ duration: 1000, once: true });
   }, []);
 
-  return (
-    <div className="event-page">
-      <section className="event-hero">
-        <div className="hero-overlay">
-          <h1 className="hero-title" data-aos="fade-up">ASX MOTO DROME 2025</h1>
-          <p className="hero-date" data-aos="fade-up" data-aos-delay="200">BENGALURU, India</p>
-        </div>
-      </section>
+  const eventData = [
+    {
+      id: 1,
+      title: "Celebration",
+      img: img1,
+      desc: "Make your special day truly unforgettable at ASX Motodrome...",
+      // knowMore: "/EventCele", 
+      details: "/EventCele",
+      quote: "/eventCele/quote",
+    },
+    {
+      id: 2,
+      title: "Corporate Outings",
+      img: img2,
+      desc: "Step away from routine and bond with your team at ASX Motodrome...",
+      // knowMore: "/corporate",
+      details: "/EventCor",
+      quote: "/corporate/quote",
+    },
+    {
+      id: 3,
+      title: "Host an Event",
+      img: img3,
+      desc: "Workshops, off-roading rallies, championships, or adventure-themed events...",
+      // knowMore: "/host",
+      details: "/EventRally",
+      quote: "/host/quote",
+    },
+  ];
 
-      <section className="event-card" data-aos="fade-up">
-        <div className="event-image" data-aos="zoom-in"></div>
-        <div className="event-details" data-aos="fade-up" data-aos-delay="200">
-          <h2 className="event-title">BIRTHDAY BASH</h2>
-          <p className="event-intro">Short introduction about the event goes here. Add a catchy one-liner!</p>
-          <button className="event-btn">GET ENQUIRE</button>
-        </div>
-      </section>
-       <section className="event-card" data-aos="fade-up">
-        <div className="event-image" data-aos="zoom-in"></div>
-        <div className="event-details" data-aos="fade-up" data-aos-delay="200">
-          <h2 className="event-title">CORPORATIVE EVENTS</h2>
-          <p className="event-intro">Short introduction about the event goes here. Add a catchy one-liner!</p>
-          <button className="event-btn">GET ENQUIRE</button>
-        </div>
-      </section>
-       <section className="event-card" data-aos="fade-up">
-        <div className="event-image" data-aos="zoom-in"></div>
-        <div className="event-details" data-aos="fade-up" data-aos-delay="200">
-          <h2 className="event-title">RALLY RACING</h2>
-          <p className="event-intro">Short introduction about the event goes here. Add a catchy one-liner!</p>
-          <button className="event-btn">GET ENQUIRE</button>
-        </div>
-      </section>
-    </div>
+  return (
+    <section className="events-section" id="events">
+      <div className="events-header" data-aos="fade-up">
+        <h2>EVENTS</h2>
+        <hr />
+      </div>
+
+      <div className="events-grid">
+        {eventData.map((event, index) => (
+          <div
+            className="event-card"
+            key={event.id}
+            data-aos="fade-up"
+            data-aos-delay={index * 150}
+          >
+            <img src={event.img} alt={event.title} className="event-img" />
+            <h3 className="event-title">{event.title}</h3>
+            <p className="event-desc">
+              {event.desc}{" "}
+              {/* <Link to={event.knowMore} className="know-more">
+                Know More
+              </Link> */}
+            </p>
+            <div className="event-buttons">
+              <Link to={event.details} className="btn-outline">
+                VIEW DETAILS
+              </Link>
+              <Link to={event.quote} className="btn-outline">
+                GET INQUIRY
+              </Link>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 
-export default EventPage;
+export default Events;

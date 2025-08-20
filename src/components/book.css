@@ -1,7 +1,10 @@
 .book-carousel-section {
   width: 100%;
-  overflow: hidden;
   position: relative;
+  overflow-x: hidden !important;
+  margin: auto;
+  box-sizing: border-box;
+  max-width: 1440px;
 }
 
 .book-slide {
@@ -18,12 +21,12 @@
   position: absolute;
   bottom: 10rem;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: clamp(10px, 4vw, 20px);
+  padding: clamp(5px, 4vw, 10px);
   border-radius: 12px;
   text-align: center;
   color: white;
-  width: min(90%, 600px);
-  margin-left: clamp(10px, 3vw, 25px);
+  width: min(93%, 550px);
+  margin-left: clamp(10px, 3vw, 25px); 
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 1s ease-out forwards;
@@ -82,7 +85,7 @@
     position: absolute;
     bottom: 4rem;
     align-items: center;
-    margin: 0 5px;
+    margin: 0px 6px;
   }
 }
 

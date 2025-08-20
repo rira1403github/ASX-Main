@@ -8,10 +8,13 @@
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
-  padding: 10px 20px;
+  padding: 2px 20px;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   backdrop-filter: blur(1px);
   overflow-x: hidden;
+  margin: auto;
+  box-sizing: border-box;
+  max-width: 1440px;
 }
 
 .custom-navbar.scrolled {
@@ -117,6 +120,6 @@
 
 @media (max-width: 480px) {
   .custom-navbar {
-    padding: 5px 8px;
+    padding: 2px 8px;
   }
 }

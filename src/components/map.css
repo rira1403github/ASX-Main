@@ -6,6 +6,9 @@
   max-width: none;
   overflow-x: hidden;
   align-items: center;
+  margin: auto;
+  box-sizing: border-box;
+  max-width: 1440px;
 }
 
 .map-container {

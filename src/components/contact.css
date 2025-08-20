@@ -4,8 +4,10 @@
   border: 1px solid red;
   width: 100%;
   box-sizing: border-box;
-  overflow-x: hidden;
   animation: fadeIn 0.8s ease forwards;
+  overflow-x: hidden !important;
+  margin: auto;
+  max-width: 1440px;
 }
 
 .contact-item {

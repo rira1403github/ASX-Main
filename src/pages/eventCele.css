@@ -1,0 +1,191 @@
+.celebrations-section {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  margin: auto;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  max-width: 1440px;
+}
+
+.celebrations-hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url("../assets/Events/hero-main.jpg") center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 5rem;
+  right:2rem;
+  max-width: 90%;
+}
+
+.hero-overlay h1 {
+  font-size: clamp(1rem, 2.5vw, 2.5rem); 
+  text-align: right;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #f9f8f5;
+  white-space: nowrap;  
+  overflow: hidden;     
+  text-overflow: ellipsis; 
+}
+
+
+.hero-overlay h2 {
+  text-align: right;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 600;
+  color: #f9f8f5;
+  margin-top: 10px;
+}
+
+.celebrations-content {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: #ff0000;
+  margin-bottom: 1rem;
+}
+
+.celebrations-quote {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.celebrations-text {
+  line-height: 1.7;
+  color: #ddd;
+}
+
+.highlight {
+  color: #ff0000;
+  font-weight: 600;
+}
+
+.journey-section {
+  padding: 2rem 1rem;
+}
+
+.journey-title {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #ff0000;
+  margin-bottom: 2rem;
+}
+
+.journey-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.journey-card {
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.journey-card img {
+  width: 100%;
+  height: 165px;
+  object-fit: cover;
+}
+
+.journey-card p {
+  padding: 0.7rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.journey-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+}
+
+.gallery-section {
+  padding: 2rem 1rem 3rem;
+  text-align: center;
+}
+
+.gallery-title {
+  font-size: 1.6rem;
+  color: #ff0000;
+  margin-bottom: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.2rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+@media (max-width: 768px) {
+  .celebrations-hero {
+    height: 60vh;
+  }
+
+  .hero-overlay {
+    padding: 1.5rem;
+    top: 4rem;
+    right:0.5rem;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+
+  .hero-overlay h2 {
+    font-size: 1rem;
+  }
+
+  .celebrations-content {
+    text-align: left;
+  }
+ 
+  .celebrations-quote {
+    text-align: left;
+    white-space: nowrap;  
+  }
+
+  .celebrations-text {
+    text-align: justify;
+  }
+  
+  .gallery-item img {
+    height: 250px;
+  }
+}
