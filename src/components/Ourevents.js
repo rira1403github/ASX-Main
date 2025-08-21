@@ -13,27 +13,33 @@ import "./generalPackages.css";
 
 const Packages = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 800, once: true });
   }, []);
 
   const packages = [
-    { 
-      title: "CELEBRATIONS", 
-      info: "VIEW DETAILS", 
+    {
+      title: "CELEBRATIONS",
+      info: "VIEW DETAILS",
       img: img1,
-      link: "/EventCele"
+      link: "/EventCele",
     },
-    { 
-      title: "CORPORATE OUTINGS", 
-      info: "VIEW DETAILS", 
+    {
+      title: "CORPORATE OUTINGS",
+      info: "VIEW DETAILS",
       img: img2,
-      link: "/EventCor"
+      link: "/EventCor",
     },
-    { 
-      title: "HOST AN EVENT", 
-      info: "VIEW DETAILS", 
+    {
+      title: "HOST AN EVENT",
+      info: "VIEW DETAILS",
       img: img3,
-      link: "/EventRally"
+      link: "/EventRally",
+    },
+    {
+      title: "CORPORATE OUTINGS",
+      info: "VIEW DETAILS",
+      img: img2,
+      link: "/EventCor",
     },
   ];
 
@@ -49,8 +55,8 @@ const Packages = () => {
       <Swiper
         modules={[Navigation, Autoplay]}
         navigation
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
-        spaceBetween={30}
+        autoplay={{ delay: 2000, disableOnInteraction: false }}
+        spaceBetween={40}
         slidesPerView={1.4}
         centeredSlides={true}
         loop={true}

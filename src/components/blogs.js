@@ -1,147 +1,10 @@
-// import React, { useRef, useState, useEffect } from 'react';
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Pagination } from 'swiper/modules'; 
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
-
-// import testimonialReel from '../assets/Home-PageM.mp4'; 
-// import './blogs.css';
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-// import "swiper/css";
-// import "swiper/css/pagination";
-
-// const Blog = () => {
-//   const [openIndex, setOpenIndex] = useState(null);
-//     const videoRef = useRef(null);
-//     const swiperRef = useRef(null);
-
-//      const handleVideoEnd = () => {
-//     if (swiperRef.current && swiperRef.current.swiper) {
-//       swiperRef.current.swiper.slideNext();
-//     }
-//   };
-
-
-//   useEffect(() => {
-//     AOS.init({ duration: 1000 });
-
-//     const videoElement = videoRef.current;
-//     const observer = new IntersectionObserver(
-//       ([entry]) => {
-//         if (entry.isIntersecting) {
-//           videoElement.play();
-//         } else {
-//           videoElement.pause();
-//         }
-//       },
-//       { threshold: 0.5 }
-//     );
-
-//     if (videoElement) observer.observe(videoElement);
-//     return () => {
-//       if (videoElement) observer.unobserve(videoElement);
-//     };
-//   }, []);
-
-
-//   const testimonials = [
-//     "“ADRENALINE RUSH”",
-//     "“WILD TRAILS, WILDER MEMORIES”",
-//     "“EXTREME THRILLS UNLEASHED”",
-//     "“RIDE THE ROUGH WITH STYLE”",
-//     "“FEEL THE DIRT, LOVE THE DRIVE”"
-//   ];
-//   const toggleFAQ = (index) => {
-//     setOpenIndex(openIndex === index ? null : index);
-//   };
-
-//   return (
-//     <div className="blog-section">
-//       <h2 className="section-title red">FAQ</h2>
-//       <div className="faq-section">
-//         {[
-//           "HOW DO I BOOK MY SLOT FOR AN ASHVA 4X4 EXPERIENCE?",
-//           "DO I NEED TO PAY ONLINE WHILE BOOKING?",
-//           "WHAT PAYMENT METHODS ARE ACCEPTED AT THE VENUE?"
-//         ].map((question, index) => (
-//           <div
-//             key={index}
-//             className={`faq-item ${openIndex === index ? 'open' : ''}`}
-//             onClick={() => toggleFAQ(index)}
-//           >
-//             <div className="faq-question">
-//               {question}
-//               <span>{openIndex === index ? '∧' : '∨'}</span>
-//               {/* ▼ ▲ */}
-//             </div>
-//             <div
-//               className="faq-answer"
-//               style={{
-//                 maxHeight: openIndex === index ? '200px' : '0px',
-//                 overflow: 'hidden',
-//                 transition: 'max-height 0.5s ease',
-//               }}
-//             >
-//               sample answer.
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-
-//       <h2 className="section-title red">TESTIMONIAL</h2>
-//       <div className="testimonial">
-//          <div className="testimonial-video-slide">
-//             <div className="testimonial-video">
-//               <video
-//                 ref={testimonialReel}
-//                 width="100%"
-//                 height="100%"
-//                 autoPlay
-//                 muted
-//                 loop
-//                 playsInline
-//                 controls
-//                 onEnded={handleVideoEnd}
-//               >
-//                 <source src={testimonialReel} type="video/mp4" />
-//                 Your browser does not support the video tag.
-//               </video>
-//             </div>
-//             </div>
-//         <Swiper
-//         modules={[Pagination]}
-//         pagination={{ clickable: true }}
-//         spaceBetween={30}
-//         slidesPerView={1}
-//         allowTouchMove={true}   
-//         autoplay={true}   
-//         loop={true}       
-//       >
-//         {testimonials.map((item, index) => (
-//           <SwiperSlide key={index}>
-//             <h3>{item}</h3>
-//           </SwiperSlide>
-//         ))}
-//       </Swiper>
-//     </div>
-//     </div>
-//   );
-// };
-
-// export default Blog;
-
-
-
-
-
 import React, { useRef, useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from 'swiper/modules'; 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import testimonialReel from '../assets/Home-PageM.mp4'; 
+import testimonialReel from '../assets/Testimonial.mp4'; 
 import './blogs.css';
 import "swiper/css";
 import "swiper/css/pagination";
@@ -166,7 +29,6 @@ const Blog = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          // ensure autoplay works
           videoElement.play().catch(() => {
             console.log("Autoplay blocked, requires user interaction");
           });
@@ -201,7 +63,6 @@ const Blog = () => {
 
   return (
     <div className="blog-section">
-      {/* FAQ */}
       <h2 className="section-title red" data-aos="fade-right">FAQ</h2>
       <div className="faq-section">
         {faqQuestions.map((question, index) => (
@@ -242,10 +103,10 @@ const Blog = () => {
             width="100%"
             height="100%"
             autoPlay
-            muted     // ✅ required for autoplay without user interaction
+            muted   
             loop
             playsInline
-            controls={false} // hide default controls
+            controls={false} 
             onEnded={handleVideoEnd}
           >
             <source src={testimonialReel} type="video/mp4" />

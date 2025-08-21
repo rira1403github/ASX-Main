@@ -14,7 +14,7 @@ import "./generalPackages.css";
 
 const Packages = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 800, once: true });
   }, []);
 
   const packages = [
@@ -56,7 +56,7 @@ const Packages = () => {
       <Swiper
         modules={[Navigation, Autoplay]}
         navigation
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        autoplay={{ delay: 2000, disableOnInteraction: false }}
         spaceBetween={30}
         slidesPerView={1.4}
         centeredSlides={true}
