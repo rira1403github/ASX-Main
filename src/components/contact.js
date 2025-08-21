@@ -30,7 +30,7 @@
 import React from 'react';
 import './contact.css';
 import { FiChevronRight } from 'react-icons/fi';
-import { Link } from 'react-router-dom'; // use this if you're using React Router
+import { Link } from 'react-router-dom'; 
 
 const Contact = () => {
   const menuItems = [

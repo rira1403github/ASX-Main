@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./Package.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import img1 from "../assets/Events/ProDriverP.png";
+// import img1 from "../assets/Events/ProDriverP.png";
 import img2 from "../assets/Events/ObstacleP.png";
 import img3 from "../assets/Events/ThrottleP.png";
 import img4 from "../assets/Events/AdventureP.png";
@@ -18,7 +18,7 @@ const Package = () => {
     {
       id: 1,
       title: "Pro Drive Training – ₹999",
-      img: img1,
+      img: img5,
       desc: "Take your first step into off-road driving with our Pro Drive Training package...",
       details: "/ProDriver",
       quote: "/eventCele/quote",
