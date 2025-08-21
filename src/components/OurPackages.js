@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import img1 from "../assets/Events/ThrottleP.png";
-import img2 from "../assets/Events/ProDriverP.png";
+// import img2 from "../assets/Events/ProDriverP.png";
 import img3 from "../assets/Events/ObstacleP.png";
 import img4 from "../assets/Events/AdventureP.png";
 import img5 from "../assets/Events/ComplimentaryP.png";
@@ -28,7 +28,7 @@ const Packages = () => {
     { 
       title: "Pro Drive Training", 
       info: "VIEW DETAILS", 
-      img: img2,
+      img: img5,
       link: "/ProDriver"
     },
     { 
