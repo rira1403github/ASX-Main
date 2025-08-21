@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';//useEffect
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-import Slider from 'react-slick';
+// import Slider from 'react-slick';
 import './blogs.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -9,9 +9,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const Blog = () => {
-  const [blogs, setBlogs] = useState([]);
+  // const [ blogs, setBlogs] = useState([]);
   const [openIndex, setOpenIndex] = useState(null);
-  const [activeSlide, setActiveSlide] = useState(0);
+  // const [  activeSlide, setActiveSlide] = useState(0);
 
   const testimonials = [
     "“ADRENALINE RUSH”",
@@ -21,52 +21,52 @@ const Blog = () => {
     "“FEEL THE DIRT, LOVE THE DRIVE”"
   ];
 
-  useEffect(() => {
-    setBlogs([
-      {
-        title: "A-THON'S EXTREME LIMITS",
-        description: "A-Thon’s Offroading delivers the ultimate adventure experience for thrill-seekers...",
-        image: require('../assets/CKZ_3743.png'),
-      },
-      {
-        title: "THE MUD LIFE CHOSE ME",
-        description: "Drive through India’s most rugged terrains with our all-terrain monsters...",
-        image: require('../assets/CKZ_3743.png'),
-      }
-    ]);
-  }, []);
+  // useEffect(() => {
+  //   setBlogs([
+  //     {
+  //       title: "A-THON'S EXTREME LIMITS",
+  //       description: "A-Thon’s Offroading delivers the ultimate adventure experience for thrill-seekers...",
+  //       image: require('../assets/CKZ_3743.png'),
+  //     },
+  //     {
+  //       title: "THE MUD LIFE CHOSE ME",
+  //       description: "Drive through India’s most rugged terrains with our all-terrain monsters...",
+  //       image: require('../assets/CKZ_3743.png'),
+  //     }
+  //   ]);
+  // }, []);
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  const sliderSettings = {
-    dots: true,
-    infinite: true,
-    centerMode: true,
-    centerPadding: "0px",
-    speed: 600,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    swipe: true,
-    arrows: true,
-    beforeChange: (_, next) => setActiveSlide(next),
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          centerMode: false,
-          slidesToShow: 1
-        }
-      }
-    ]
-  };
+  // const sliderSettings = {
+  //   dots: true,
+  //   infinite: true,
+  //   centerMode: true,
+  //   centerPadding: "0px",
+  //   speed: 600,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 4000,
+  //   swipe: true,
+  //   arrows: true,
+  //   beforeChange: (_, next) => setActiveSlide(next),
+  //   responsive: [
+  //     {
+  //       breakpoint: 768,
+  //       settings: {
+  //         centerMode: false,
+  //         slidesToShow: 1
+  //       }
+  //     }
+  //   ]
+  // };
 
   return (
     <div className="blog-section">
-      <h2 className="section-title red">OUR BLOGS</h2>
+      {/* <h2 className="section-title red">OUR BLOGS</h2>
       <div className="blog-carousel-wrapper">
         <Slider {...sliderSettings} className="blog-carousel">
           {blogs.map((blog, index) => (
@@ -85,7 +85,7 @@ const Blog = () => {
             </div>
           ))}
         </Slider>
-      </div>
+      </div> */}
 
       <h2 className="section-title red">FAQ</h2>
       <div className="faq-section">

@@ -1,8 +1,9 @@
 import React from 'react';
 import './video.css';
-import ashvaReel from '../assets/ASHVA-REEL.mp4'; 
+import ashvaReel from '../assets/Home-PageM.mp4'; 
 
 const Video = () => {
+  
   return (
     <div className="video-section">
       <video

@@ -3,13 +3,15 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/navbar";
 import Video from "./components/video";
-import Book from "./components/book";
+// import Book from "./components/book";
 import Blog from "./components/blogs";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
 import Map from "./components/map";
 import OurPackages from "./components/OurPackages";
 import OurEvents from "./components/Ourevents";
+import OurOffers from "./components/OurOffers";
+
 import Loader from "./components/Loader";
 import FloatingMenu from "./components/FloatingMenu"; 
 
@@ -53,9 +55,6 @@ function App() {
           path="/"
           element={
             <main>
-              <section id="book">
-                <Book />
-              </section>
               <Video />
               <section id="OurPackages">
                 <OurPackages />
@@ -63,11 +62,14 @@ function App() {
               <section id="OurEvents">
                 <OurEvents />
               </section>
-              <section id="blog">
-                <Blog />
+              <section id="OurOffers">
+                <OurOffers />
               </section>
               <section id="map">
                 <Map />
+              </section>
+              <section id="blog">
+                <Blog />
               </section>
               <section id="contact">
                 <Contact />
