@@ -94,7 +94,6 @@ const Blog = () => {
         ))}
       </div>
 
-      {/* Testimonials */}
       <h2 className="section-title red" data-aos="fade-left">TESTIMONIAL</h2>
       <div className="testimonial">
         <div className="testimonial-video" data-aos="zoom-in">
