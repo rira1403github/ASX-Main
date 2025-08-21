@@ -56,7 +56,7 @@ const Packages = () => {
       <div className="packages-header">
         <h2 data-aos="fade-right">OUR PACKAGES</h2>
         <a href="/Package" className="know-more" data-aos="fade-left">
-          KNOW MORE →
+          KNOW MORE <span className="big-arrow">&gt;</span>
         </a>
       </div>
 

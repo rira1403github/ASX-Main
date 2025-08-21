@@ -1,7 +1,7 @@
 .map-section {
   background-color: black;
   color: #f9f8f5;
-  padding: 80px 60px;
+  padding: 60px 40px;
   font-family: 'raleway', sans-serif;
   max-width: none;
   overflow-x: hidden;
@@ -141,7 +141,7 @@
 @media (max-width: 480px) {
 
   .map-section {
-    padding: 10px 20px 20px;
+    padding: 0px 20px 20px;
   }
 
   .map-form-container h1 {

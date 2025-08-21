@@ -65,11 +65,11 @@ function App() {
               <section id="OurOffers">
                 <OurOffers />
               </section>
+               <section id="blog">
+                <Blog />
+              </section>
               <section id="map">
                 <Map />
-              </section>
-              <section id="blog">
-                <Blog />
               </section>
               <section id="contact">
                 <Contact />

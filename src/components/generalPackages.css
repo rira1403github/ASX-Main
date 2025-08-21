@@ -1,5 +1,5 @@
 .packages-section {
-  padding: 50px 0px;
+  padding: 30px 0px;
   overflow-x: hidden !important;
   text-align: center;
   margin: auto;
@@ -13,7 +13,6 @@
   justify-content: space-between;
   margin-left: 60px;
   align-items: center;
-  margin-bottom: 20px;
   color: #ff0000;
 }
 
@@ -34,10 +33,17 @@
   transform: scale(1.1) !important;
 }
 
+.big-arrow {
+  font-size: 25px;  
+  margin-left: 5px;
+  
+}
+
+
 .packages-swiper {
   max-width: 1440px;
   width: 100%;
-  padding: 50px 0px 0px;
+  padding: 40px 0px 0px;
   overflow-x: hidden !important;
 }
 
@@ -122,8 +128,8 @@
   }
 
   .packages-header h2 {
-    font-size: 1.1rem;
-    font-weight: bold;
+    font-size: 1.3rem;
+    font-weight: 800;
   }
 
   .know-more {
@@ -143,4 +149,14 @@
     font-size: 0.85rem;
     padding: 5px 10px;
   }
+}
+
+@media (max-width: 500px) {
+  .packages-section {
+  padding: 10px 0px 0px;
+}
+
+.packages-swiper {
+  padding: 20px 0px 10px;
+}
 }

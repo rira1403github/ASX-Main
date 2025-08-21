@@ -42,7 +42,7 @@ const Packages = () => {
       <div className="packages-header">
         <h2 data-aos="fade-right">OUR EVENTS</h2>
         <a href="/events" className="know-more" data-aos="fade-left">
-          KNOW MORE →
+          KNOW MORE <span className="big-arrow">&gt;</span>
         </a>
       </div>
 
