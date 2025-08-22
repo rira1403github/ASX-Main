@@ -3,10 +3,10 @@ import "./Package.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 // import img1 from "../assets/Events/ProDriverP.png";
-import img2 from "../assets/Events/ObstacleP.png";
-import img3 from "../assets/Events/ThrottleP.png";
-import img4 from "../assets/Events/AdventureP.png";
-import img5 from "../assets/Events/ComplimentaryP.png";
+import img2 from "../assets/Packages/ObstacleP.png";
+import img3 from "../assets/Packages/ThrottleP.png";
+import img4 from "../assets/Packages/AdventureP.png";
+import img5 from "../assets/Packages/ComplimentaryP.png";
 import { Link } from "react-router-dom";
 
 const Package = () => {

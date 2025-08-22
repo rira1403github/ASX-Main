@@ -19,8 +19,9 @@ import Package from "./pages/Package";
 import Experience from "./pages/experience";
 import PageContact from "./pages/pageContact";
 import AboutUs from "./pages/aboutUs";
-
 import Events from "./pages/events";
+import OfferPage from "./pages/offerPage";
+
 import Payment from "./pages/Payment";
 import EventCele from "./pages/eventCele";
 import EventCor from "./pages/eventCor";
@@ -32,6 +33,12 @@ import Complementary from "./pages/Complementary";
 import Throttle from "./pages/Throttle";
 import ProDriver from "./pages/proDriver";
 
+import WeekOffer from "./pages/weekOffer";
+import InfluenceOffer from "./pages/influenceOffer";
+import FestiveOffer from "./pages/festiveOffer";
+import GroupOffer from "./pages/groupOffer";
+
+import Rules from "./pages/Rules";
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -91,6 +98,20 @@ function App() {
             </>
           }
         />
+
+        <Route
+          path="/Rules"
+          element={
+            <>
+              <Video />
+              <Rules />
+              <Contact />
+              <Footer />
+              <FloatingMenu /> 
+            </>
+          }
+        />
+
         <Route
           path="/experience"
           element={
@@ -128,6 +149,7 @@ function App() {
           path="/events"
           element={
             <>
+              <Video />
               <Events />
               <Contact />
               <Footer />
@@ -228,6 +250,62 @@ function App() {
           element={
             <>
               <Obstacle />
+              <Contact />
+              <Footer />
+              <FloatingMenu />
+            </>
+          }
+        />
+        <Route
+          path="/OfferPage"
+          element={
+            <>
+              <Video />
+              <OfferPage />
+              <Contact />
+              <Footer />
+              <FloatingMenu />
+            </>
+          }
+        />
+        <Route
+          path="/WeekOffer"
+          element={
+            <>
+              <WeekOffer />
+              <Contact />
+              <Footer />
+              <FloatingMenu />
+            </>
+          }
+        />
+        <Route
+          path="/FestiveOffer"
+          element={
+            <>
+              <FestiveOffer />
+              <Contact />
+              <Footer />
+              <FloatingMenu />
+            </>
+          }
+        />
+        <Route
+          path="/GroupOffer"
+          element={
+            <>
+              <GroupOffer />
+              <Contact />
+              <Footer />
+              <FloatingMenu />
+            </>
+          }
+        />
+        <Route
+          path="/InfluenceOffer"
+          element={
+            <>
+              <InfluenceOffer />
               <Contact />
               <Footer />
               <FloatingMenu />

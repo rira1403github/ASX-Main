@@ -3,10 +3,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-import img1 from "../assets/Events/InfluenceP.webp";
-import img2 from "../assets/Events/WeekdayP.webp";
-import img3 from "../assets/Events/GroupDP.webp";
-import img4 from "../assets/Events/FestiveP.webp";
+import img1 from "../assets/Offers/influenceOffer.webp";
+import img2 from "../assets/Offers/weekOffer.webp";
+import img3 from "../assets/Offers/groupOffer.webp";
+import img4 from "../assets/Offers/festiveOffer.webp";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -22,33 +22,33 @@ const Packages = () => {
       title: "INFLUENCER COLLABORATIONS", 
       info: "VIEW DETAILS", 
       img: img1,
-      link: "/packages/full-throttle"
+      link: "/InfluenceOffer"
     },
     { 
       title: "WEEKDAY OFFER", 
       info: "VIEW DETAILS", 
       img: img2,
-      link: "/packages/pro-drive"
+      link: "/WeekOffer"
     },
     { 
       title: "GROUP DISCOUNTS", 
       info: "VIEW DETAILS", 
       img: img3,
-      link: "/packages/obstacle-conqueror"
+      link: "/GroupOffer"
     },
     { 
       title: "FESTIVE OFFER", 
       info: "VIEW DETAILS", 
       img: img4,
-      link: "/packages/obstacle-conqueror"
+      link: "/FestiveOffer"
     },
   ];
 
   return (
-    <section className="packages-section">
-      <div className="packages-header">
+    <section className="general-packages-section">
+      <div className="general-packages-header">
         <h2 data-aos="fade-right">OUR OFFERS</h2>
-        <a href="#more" className="know-more" data-aos="fade-left">
+        <a href="/OfferPage" className="know-more" data-aos="fade-left">
           KNOW MORE <span className="big-arrow">&gt;</span>
         </a>
       </div>
@@ -61,13 +61,13 @@ const Packages = () => {
         slidesPerView={1.4}
         centeredSlides={true}
         loop={true}
-        className="packages-swiper"
+        className="general-packages-swiper"
       >
         {packages.map((pkg, index) => (
           <SwiperSlide key={index}>
-            <div className="package-card" data-aos="zoom-in">
-              <img src={pkg.img} alt={pkg.title} className="package-img" />
-              <div className="package-footer">
+            <div className="general-package-card" data-aos="zoom-in">
+              <img src={pkg.img} alt={pkg.title} className="general-package-img" />
+              <div className="general-package-footer">
                 <h3>{pkg.title}</h3>
                 <a href={pkg.link} className="view-details">
                   {pkg.info}

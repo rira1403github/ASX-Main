@@ -3,11 +3,11 @@ import "./eventCele.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import lastImg from "../assets/Events/last-main.png";
-import img1 from "../assets/Events/EC-1.png";
-import img2 from "../assets/Events/EC-2.png";
-import img3 from "../assets/Events/EC-3.png";
-import img4 from "../assets/Events/EC-4.png";
-import img5 from "../assets/Events/EC-5.png";
+import img1 from "../assets/Events/Event1.webp";
+import img2 from "../assets/Events/Event2.webp";
+import img3 from "../assets/Events/Event3.webp";
+import img4 from "../assets/Events/Event4.webp";
+import img5 from "../assets/Events/Event5.webp";
 
 const Celebrations = () => {
   useEffect(() => {

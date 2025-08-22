@@ -1,4 +1,4 @@
-.packages-section {
+.general-packages-section {
   padding: 30px 0px;
   overflow-x: hidden !important;
   text-align: center;
@@ -8,7 +8,7 @@
   max-width: 1440px;
 }
 
-.packages-header {
+.general-packages-header {
   display: flex;
   justify-content: space-between;
   margin-left: 60px;
@@ -16,7 +16,7 @@
   color: #ff0000;
 }
 
-.packages-header h2 {
+.general-packages-header h2 {
   font-size: 2rem;
   font-weight: bold;
 }
@@ -38,34 +38,37 @@
   margin-left: 5px;
 }
 
-.packages-swiper {
+.general-packages-swiper {
   max-width: 1440px;
   width: 100%;
   padding: 40px 0px 0px;
   overflow-x: hidden !important;
 }
 
-.package-card {
+.general-package-card {
+  background-color: black !important;
+  padding-top: 45px;
   position: relative;
-  background: #f5f5f5;
+  background-color: black;
   border-radius: 15px;
   overflow: hidden;
   transform: scale(0.7);
-  height: 450px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   transition: all 0.6s ease-in-out;
 }
 
-.package-img {
+.general-package-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
 }
 
-.swiper-slide-active .package-card {
+.swiper-slide-active .general-package-card {
+  padding-top: 0px;
   transform: scale(1.1);
   height: 500px;
   background: #fff;
@@ -74,14 +77,14 @@
   opacity: 1;
 }
 
-.swiper-slide-prev .package-card,
-.swiper-slide-next .package-card {
+.swiper-slide-prev .general-package-card,
+.swiper-slide-next .general-package-card {
   transform: scale(0.7);
   filter: blur(2px);
   opacity: 0.6;
 }
 
-.package-footer {
+.general-package-footer {
   width: 100%;
   border-radius: 0 0 15px 15px;
   padding: 15px 0;
@@ -93,7 +96,7 @@
   left: 0;
 }
 
-.package-footer h3 {
+.general-package-footer h3 {
   margin: 0;
   font-size: 1.2rem;
   margin-bottom: 1rem;
@@ -120,12 +123,12 @@
 }
 
 @media (max-width: 600px) {
-  .packages-header {
+  .general-packages-header {
     margin-left: 20px;
     margin-bottom: 0px;
   }
 
-  .packages-header h2 {
+  .general-packages-header h2 {
     font-size: 1.3rem;
     font-weight: 800;
   }
@@ -134,12 +137,19 @@
     margin-right: 20px;
   }
 
-  .package-card {
+  .general-package-card {
     transform: scale(0.7);
     height: 250px;
+    padding-top: 20px;
   }
 
-  .swiper-slide-active .package-card {
+  .general-package-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide-active 
+  .general-package-card {
     height: 300px;
   }
 
@@ -150,11 +160,11 @@
 }
 
 @media (max-width: 500px) {
-  .packages-section {
-  padding: 10px 0px 0px;
-}
+  .general-packages-section {
+    padding: 10px 0px 0px;
+  }
 
-.packages-swiper {
-  padding: 20px 0px 10px;
-}
+  .general-packages-swiper {
+    padding: 20px 0px 10px;
+  }
 }

@@ -56,16 +56,19 @@ const Navbar = () => {
 
         <h2 className="menu-title red">MENU</h2>  
         <ul className="menu-links">
-          <li className="slide-in-item" style={{ animationDelay: `0.3s` }} onClick={closeMenu}>
+          <li className="slide-in-item" style={{ animationDelay: `0.1s` }} onClick={closeMenu}>
             <RouterLink to="/Package" className="menu-scroll-link">OUR PACKAGES</RouterLink>
           </li>
-          <li className="slide-in-item" style={{ animationDelay: `0.4s` }} onClick={closeMenu}>
+          <li className="slide-in-item" style={{ animationDelay: `0.2s` }} onClick={closeMenu}>
             <RouterLink to="/experience" className="menu-scroll-link">OUR OFFERS</RouterLink>
           </li>
-          <li className="slide-in-item" style={{ animationDelay: `0.5s` }} onClick={closeMenu}>
+          <li className="slide-in-item" style={{ animationDelay: `0.3s` }} onClick={closeMenu}>
             <RouterLink to="/events" className="menu-scroll-link">EVENTS</RouterLink>
           </li>
-          <li className="slide-in-item" style={{ animationDelay: `0.6s` }} onClick={closeMenu}>
+          <li className="slide-in-item" style={{ animationDelay: `0.4s` }} onClick={closeMenu}>
+            <RouterLink to="/Rules" className="menu-scroll-link">RULES & REGULATIONS</RouterLink>
+          </li>
+          <li className="slide-in-item" style={{ animationDelay: `0.5s` }} onClick={closeMenu}>
             <RouterLink to="/aboutUs" className="menu-scroll-link">ABOUT US</RouterLink>
           </li>
           {/* <li className="slide-in-item" style={{ animationDelay: `0.6s` }}>
@@ -81,7 +84,7 @@ const Navbar = () => {
               ABOUT US
             </ScrollLink>
           </li> */}
-          <li className="slide-in-item" style={{ animationDelay: `0.7s` }} onClick={closeMenu}>
+          <li className="slide-in-item" style={{ animationDelay: `0.6s` }} onClick={closeMenu}>
             <RouterLink to="/pageContact" className="menu-scroll-link">CONTACT US</RouterLink>
           </li>
         </ul>

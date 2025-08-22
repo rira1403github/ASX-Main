@@ -3,9 +3,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-import img1 from "../assets/Events/EI-1.png";
-import img2 from "../assets/Events/EI-2.png";
-import img3 from "../assets/Events/EI-3.png";
+import img1 from "../assets/Events/hero-main.webp";
+import img2 from "../assets/Events/eventCor-main.webp";
+import img3 from "../assets/Events/eventRallymain.webp";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -44,8 +44,8 @@ const Packages = () => {
   ];
 
   return (
-    <section className="packages-section">
-      <div className="packages-header">
+    <section className="general-packages-section">
+      <div className="general-packages-header">
         <h2 data-aos="fade-right">OUR EVENTS</h2>
         <a href="/events" className="know-more" data-aos="fade-left">
           KNOW MORE <span className="big-arrow">&gt;</span>
@@ -60,13 +60,13 @@ const Packages = () => {
         slidesPerView={1.4}
         centeredSlides={true}
         loop={true}
-        className="packages-swiper"
+        className="general-packages-swiper"
       >
         {packages.map((pkg, index) => (
           <SwiperSlide key={index}>
-            <div className="package-card" data-aos="zoom-in">
-              <img src={pkg.img} alt={pkg.title} className="package-img" />
-              <div className="package-footer">
+            <div className="general-package-card" data-aos="zoom-in">
+              <img src={pkg.img} alt={pkg.title} className="general-package-img" />
+              <div className="general-package-footer">
                 <h3>{pkg.title}</h3>
                 <a href={pkg.link} className="view-details">
                   {pkg.info}

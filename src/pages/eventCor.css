@@ -12,7 +12,7 @@
 .eventCor-hero {
   position: relative;
   height: 65vh;
-  background: url("../assets/Events/maincorp.jpg") center/cover no-repeat;
+  background: url("../assets/Events/eventCor-main.webp") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: flex-end;

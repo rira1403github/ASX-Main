@@ -9,12 +9,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import lastImg from "../assets/Events/GEco.jpg";
-import img1 from "../assets/Events/Eco1.jpg";
-import img2 from "../assets/Events/Eco2.jpg";
-import img3 from "../assets/Events/Eco3.png";
-import img4 from "../assets/Events/Eco4.jpg";
-import img5 from "../assets/Events/Eco5.png";
-import img6 from "../assets/Events/Eco6.png";
+import img1 from "../assets/Events/Event1.webp";
+import img2 from "../assets/Events/Event2.webp";
+import img3 from "../assets/Events/Event3.webp";
+import img4 from "../assets/Events/Event4.webp";
+import img5 from "../assets/Events/Event5.webp";
+import img6 from "../assets/Events/Event6.webp";
 
 const facilities = [
   { id: 1, title: "LOUNGE AREA", icon: <FaCouch /> },

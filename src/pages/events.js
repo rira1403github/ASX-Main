@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import "./events.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import img1 from "../assets/Events/EI-1.png";
-import img2 from "../assets/Events/EI-2.png";
-import img3 from "../assets/Events/EI-3.png";
+import img1 from "../assets/Events/hero-main.webp";
+import img2 from "../assets/Events/eventCor-main.webp";
+import img3 from "../assets/Events/eventRallymain.webp";
 import { Link } from "react-router-dom";
 
 const Events = () => {
@@ -20,7 +20,7 @@ const Events = () => {
       desc: "Make your special day truly unforgettable at ASX Motodrome...",
       // knowMore: "/EventCele", 
       details: "/EventCele",
-      quote: "/eventCele/quote",
+      quote: "/Enguiry",
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ const Events = () => {
       desc: "Step away from routine and bond with your team at ASX Motodrome...",
       // knowMore: "/corporate",
       details: "/EventCor",
-      quote: "/corporate/quote",
+      quote: "/Enguiry",
     },
     {
       id: 3,
@@ -38,7 +38,7 @@ const Events = () => {
       desc: "Workshops, off-roading rallies, championships, or adventure-themed events...",
       // knowMore: "/host",
       details: "/EventRally",
-      quote: "/host/quote",
+      quote: "/Enguiry",
     },
   ];
 
