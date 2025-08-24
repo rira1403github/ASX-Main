@@ -1,13 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./FloatingMenu.css";
-// import { FaCar, FaTicketAlt, FaCalendarAlt, FaChevronLeft } from "react-icons/fa";
 import { FaTicketAlt, FaCalendarAlt, FaChevronLeft } from "react-icons/fa";
-// import carimage from "../assets/carimage.png"; FaCar,
 import carimage from "../assets/ashva.png";
 
-
 const FloatingMenu = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const [active, setActive] = useState(null);
 
   const handleClick = (item) => {
@@ -16,6 +14,7 @@ const FloatingMenu = () => {
 
   return (
     <div className="floating-menu">
+
       <button
         className={`menu-toggle ${open ? "open" : ""}`}
         onClick={() => setOpen(!open)}
@@ -28,23 +27,30 @@ const FloatingMenu = () => {
           className={`menu-item ${active === "packages" ? "active" : ""}`}
           onClick={() => handleClick("packages")}
         >
-          {/* <FaCar className="icon" /> */}
-          <img src={carimage} className="icon-image"></img>
-          <span>PACKAGES</span>
+          <Link to="/Package" className="menu-link">
+            <img src={carimage} className="icon-image" alt="Packages" />
+            <span>PACKAGES</span>
+          </Link>
         </div>
+
         <div
           className={`menu-item ${active === "offers" ? "active" : ""}`}
           onClick={() => handleClick("offers")}
         >
-          <FaTicketAlt className="icon" />
-          <span>OFFERS</span>
+          <Link to="/OfferPage" className="menu-link">
+            <FaTicketAlt className="icon" />
+            <span>OFFERS</span>
+          </Link>
         </div>
+
         <div
           className={`menu-item ${active === "events" ? "active" : ""}`}
           onClick={() => handleClick("events")}
         >
-          <FaCalendarAlt className="icon" />
-          <span>EVENTS</span>
+          <Link to="/Events" className="menu-link">
+            <FaCalendarAlt className="icon" />
+            <span>EVENTS</span>
+          </Link>
         </div>
       </div>
     </div>

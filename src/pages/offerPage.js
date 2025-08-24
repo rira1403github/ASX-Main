@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./Package.css";
+import "./offerPage.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -51,16 +51,16 @@ const OfferPage = () => {
   ];
 
   return (
-    <section className="package-section" id="events">
-      <div className="package-header" data-aos="fade-up">
+    <section className="offerPage-section" id="offerPage">
+      <div className="offerPage-header" data-aos="fade-up">
         <h2>EXCLUSIVE OFFERS</h2>
         <hr />
       </div>
 
-      <div className="package-grid" role="list">
+      <div className="offerPage-grid" role="list">
         {eventData.map((event, index) => (
           <article
-            className="package-card"
+            className="offerPage-card"
             key={event.id}
             role="listitem"
             data-aos="fade-up"
@@ -69,12 +69,12 @@ const OfferPage = () => {
             <img
               src={event.img}
               alt={event.title || "Offer image"}
-              className="package-img"
+              className="offerPage-img"
               loading="lazy"
             />
-            <h3 className="package-title">{event.title}</h3>
-            <p className="package-desc">{event.desc}</p>
-            <div className="package-buttons">
+            <h3 className="offerPage-title">{event.title}</h3>
+            <p className="offerPage-desc">{event.desc}</p>
+            <div className="offerPage-buttons">
               <Link to={event.details} className="btn-outline primary">
                 VIEW DETAILS
               </Link>

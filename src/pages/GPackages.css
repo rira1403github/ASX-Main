@@ -1,7 +1,7 @@
 .gPackages-section {
   width: 100%;
   background: #000;
-  padding-top: 5rem;
+  /* padding-top: 4rem; */
   color: #fff;
   font-family: "Poppins", sans-serif;
   margin: auto;
@@ -226,8 +226,6 @@
   }
 }
 
-
-/* Form CSS */
 .gPackages-experience-container {
   background: #000;
   color: #ffffff;
@@ -422,7 +420,7 @@
 
 @media screen and (max-width: 480px) {
   .gPackages-experience-container {
-    padding-top: 100px;
+    padding-top: 20px;
     overflow-x: hidden;
   }
 

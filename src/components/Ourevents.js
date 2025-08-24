@@ -54,10 +54,10 @@ const Packages = () => {
 
       <Swiper
         modules={[Navigation, Autoplay]}
-        navigation
+        // navigation
         autoplay={{ delay: 2000, disableOnInteraction: false }}
-        spaceBetween={40}
-        slidesPerView={1.4}
+        spaceBetween={25}
+        slidesPerView={1.3}
         centeredSlides={true}
         loop={true}
         className="general-packages-swiper"

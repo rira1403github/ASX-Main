@@ -1,7 +1,7 @@
 .rules-section {
   background-color: #0d0d0d;
   color: #fff;
-  padding: 100px 40px;
+  padding: 50px 40px;
   font-family: 'Raleway', sans-serif;
   width: 100%;
   box-sizing: border-box;
@@ -22,18 +22,6 @@
   position: relative;
   display: inline-block;
 }
-/* 
-.rules-title::after {
-  content: '';
-  position: absolute;
-  width: 50%;
-  height: 3px;
-  background: #ff4c4c;
-  left: 25%;
-  bottom: -8px;
-  border-radius: 2px;
-  animation: expandLine 1s ease-in-out forwards;
-} */
 
 @keyframes expandLine {
   from { width: 0; }
@@ -122,7 +110,7 @@
 
 @media (max-width: 768px) {
   .rules-section {
-    padding: 60px 20px;
+    padding: 20px 10px;
   }
   .rules-title {
     font-size: 28px;

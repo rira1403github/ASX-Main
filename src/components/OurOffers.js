@@ -3,10 +3,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-import img1 from "../assets/Offers/influenceOffer.webp";
-import img2 from "../assets/Offers/weekOffer.webp";
-import img3 from "../assets/Offers/groupOffer.webp";
-import img4 from "../assets/Offers/festiveOffer.webp";
+import img1 from "../assets/Offers/influenceOfferMain.webp";
+import img2 from "../assets/Offers/weekOfferMain.webp";
+import img3 from "../assets/Offers/groupOfferMain.webp";
+import img4 from "../assets/Offers/festiveOfferMain.webp";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -14,7 +14,7 @@ import "./generalPackages.css";
 
 const Packages = () => {
   useEffect(() => {
-    AOS.init({ duration: 800, once: true });
+    AOS.init({ duration: 1000, once: true });
   }, []);
 
   const packages = [
@@ -55,10 +55,10 @@ const Packages = () => {
 
       <Swiper
         modules={[Navigation, Autoplay]}
-        navigation
+        // navigation
         autoplay={{ delay: 2000, disableOnInteraction: false }}
-        spaceBetween={30}
-        slidesPerView={1.4}
+        spaceBetween={25}
+        slidesPerView={1.3}
         centeredSlides={true}
         loop={true}
         className="general-packages-swiper"

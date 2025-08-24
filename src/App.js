@@ -14,6 +14,7 @@ import OurOffers from "./components/OurOffers";
 
 import Loader from "./components/Loader";
 import FloatingMenu from "./components/FloatingMenu"; 
+import ScrollToTop from "./components/ScrollToTop"; 
 
 import Package from "./pages/Package";
 import Experience from "./pages/experience";
@@ -39,6 +40,7 @@ import FestiveOffer from "./pages/festiveOffer";
 import GroupOffer from "./pages/groupOffer";
 
 import Rules from "./pages/Rules";
+
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -56,6 +58,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop /> {/* ✅ FIX ADDED */}
       <Navbar />
       <Routes>
         <Route
