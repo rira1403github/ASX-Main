@@ -44,9 +44,9 @@ const Blog = () => {
   }, []);
 
   const faqQuestions = [
-    "HOW DO I BOOK MY SLOT FOR AN ASHVA 4X4 EXPERIENCE?",
-    "DO I NEED TO PAY ONLINE WHILE BOOKING?",
-    "WHAT PAYMENT METHODS ARE ACCEPTED AT THE VENUE?"
+    "What safety measures are in place at ASX MotoDrome?",
+    "Do I need to bring extra clothes for off-roading?",
+    "Can someone without any driving experience try it out?"
   ];
 
   const testimonials = [
@@ -64,7 +64,7 @@ const Blog = () => {
   return (
     <div className="blog-section">
       <h2 className="section-title red" data-aos="fade-right">FAQ</h2>
-      <div className="faq-section">
+      {/* <div className="faq-section">
         {faqQuestions.map((question, index) => (
           <div
             key={index}
@@ -86,13 +86,39 @@ const Blog = () => {
               }}
             >
               <p>
-                This is a sample answer for: <b>{question}</b>.  
+                <b>{question}</b>.  
                 You can customize with actual booking/payment info here.
               </p>
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
+      <div className="faq-section"> {faqQuestions.map((question, index) => (
+        <div key={index} className={`faq-item ${openIndex === index ? "open" : ""}`} 
+        onClick={() => toggleFAQ(index)} data-aos="fade-up" data-aos-delay={index * 100} >
+          <div className="faq-question"> {question} <span>{openIndex === index ? "▲" : "▼"}</span></div>
+          <div className="faq-answer" style={{ maxHeight: openIndex === index ? "200px" : "0px", overflow: "hidden", transition: "max-height 0.5s ease", }} >
+            <p> {index === 0 && (
+              <>
+              — Trained marshals, medical support, vehicle checks, and safety briefings are standard at every session.
+            </> )}
+            {index === 1 && (
+            <>
+              — Yes! Off-roading often involves mud, dust, and
+              water splashes, so carrying an extra set of clothes is highly
+              recommended.
+              </> )} 
+              {index === 2 && ( <>
+              — Absolutely! Even if you have no driving
+              experience, our certified company driver will first give you
+              proper training and guide you through everything, then you can
+              enjoy the ride on your own.
+              </> )}
+              </p>
+              </div>
+              </div>
+            ))}
+            </div>
 
       <h2 className="section-title red" data-aos="fade-left">TESTIMONIAL</h2>
       <div className="testimonial">
