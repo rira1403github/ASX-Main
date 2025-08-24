@@ -58,7 +58,7 @@ function App() {
 
   return (
     <Router>
-      <ScrollToTop /> {/* ✅ FIX ADDED */}
+      <ScrollToTop /> 
       <Navbar />
       <Routes>
         <Route
