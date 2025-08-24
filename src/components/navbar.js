@@ -60,8 +60,9 @@ const Navbar = () => {
             <RouterLink to="/Package" className="menu-scroll-link">OUR PACKAGES</RouterLink>
           </li>
           <li className="slide-in-item" style={{ animationDelay: `0.2s` }} onClick={closeMenu}>
-            <RouterLink to="/experience" className="menu-scroll-link">OUR OFFERS</RouterLink>
+            <RouterLink to="/OfferPage" className="menu-scroll-link">OUR OFFERS</RouterLink>
           </li>
+          {/* /experience */}
           <li className="slide-in-item" style={{ animationDelay: `0.3s` }} onClick={closeMenu}>
             <RouterLink to="/events" className="menu-scroll-link">EVENTS</RouterLink>
           </li>
