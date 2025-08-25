@@ -94,6 +94,7 @@ function App() {
           path="/Package"
           element={
             <>
+              <Video />
               <Package />
               <Contact />
               <Footer />
@@ -130,7 +131,9 @@ function App() {
           path="/pageContact"
           element={
             <>
+              <Video />
               <PageContact />
+              <Map />
               <Contact />
               <Footer />
               <FloatingMenu />
@@ -141,7 +144,9 @@ function App() {
           path="/aboutUs"
           element={
             <>
+              <Video />
               <AboutUs />
+              <Map />
               <Contact />
               <Footer />
               <FloatingMenu />

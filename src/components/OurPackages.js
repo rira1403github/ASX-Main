@@ -3,11 +3,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-import img1 from "../assets/Packages/ThrottleP.png";
-// import img2 from "../assets/Events/ProDriverP.png";
-import img3 from "../assets/Packages/ObstacleP.png";
-import img4 from "../assets/Packages/AdventureP.png";
-import img5 from "../assets/Packages/ComplimentaryP.png";
+import img1 from "../assets/Packages/ThrottleP.webp";
+import img2 from "../assets/Packages/DriverP.webp";
+import img3 from "../assets/Packages/ObstacleP.webp";
+import img4 from "../assets/Packages/AdventureP.webp";
+import img5 from "../assets/Packages/ComplimentaryP.webp";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -28,7 +28,7 @@ const Packages = () => {
     { 
       title: "Pro Drive Training", 
       info: "VIEW DETAILS", 
-      img: img5,
+      img: img2,
       link: "/ProDriver"
     },
     { 
@@ -54,7 +54,7 @@ const Packages = () => {
   return (
     <section className="general-packages-section">
       <div className="general-packages-header">
-        <h2 data-aos="fade-right">OUR PACKAGES</h2>
+        <h2 data-aos="fade-right">PACKAGES</h2>
         <a href="/Package" className="know-more" data-aos="fade-left">
           KNOW MORE <span className="big-arrow">&gt;</span>
         </a>
@@ -62,7 +62,7 @@ const Packages = () => {
 
       <Swiper
         modules={[Navigation, Autoplay]}
-        // navigation
+      
         autoplay={{ delay: 2000, disableOnInteraction: false }}
         spaceBetween={25}
         slidesPerView={1.3}

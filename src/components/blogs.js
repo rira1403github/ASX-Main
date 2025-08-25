@@ -64,35 +64,6 @@ const Blog = () => {
   return (
     <div className="blog-section">
       <h2 className="section-title red" data-aos="fade-right">FAQ</h2>
-      {/* <div className="faq-section">
-        {faqQuestions.map((question, index) => (
-          <div
-            key={index}
-            className={`faq-item ${openIndex === index ? 'open' : ''}`}
-            onClick={() => toggleFAQ(index)}
-            data-aos="fade-up"
-            data-aos-delay={index * 100}
-          >
-            <div className="faq-question">
-              {question}
-              <span>{openIndex === index ? '▲' : '▼'}</span>
-            </div>
-            <div
-              className="faq-answer"
-              style={{
-                maxHeight: openIndex === index ? '200px' : '0px',
-                overflow: 'hidden',
-                transition: 'max-height 0.5s ease',
-              }}
-            >
-              <p>
-                <b>{question}</b>.  
-                You can customize with actual booking/payment info here.
-              </p>
-            </div>
-          </div>
-        ))}
-      </div> */}
       <div className="faq-section"> {faqQuestions.map((question, index) => (
         <div key={index} className={`faq-item ${openIndex === index ? "open" : ""}`} 
         onClick={() => toggleFAQ(index)} data-aos="fade-up" data-aos-delay={index * 100} >

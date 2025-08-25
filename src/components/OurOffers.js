@@ -47,7 +47,7 @@ const Packages = () => {
   return (
     <section className="general-packages-section">
       <div className="general-packages-header">
-        <h2 data-aos="fade-right">OUR OFFERS</h2>
+        <h2 data-aos="fade-right">OFFERS</h2>
         <a href="/OfferPage" className="know-more" data-aos="fade-left">
           KNOW MORE <span className="big-arrow">&gt;</span>
         </a>

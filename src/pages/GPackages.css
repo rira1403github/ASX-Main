@@ -13,7 +13,7 @@
 .gPackages-hero {
   position: relative;
   height: 100vh;
-  background: url("../assets/Packages/ComplimentaryP.png") left/cover no-repeat;
+  background: url("../assets/Packages/ComplimentaryP.webp") left/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -422,6 +422,7 @@
   .gPackages-experience-container {
     padding-top: 20px;
     overflow-x: hidden;
+    background-color: #121212;
   }
 
   .gPackages-experience-title {

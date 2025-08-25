@@ -248,6 +248,9 @@
   .genOffer-section {
     padding-bottom: 2rem;
   }
+  .genOffer-experience-container {
+  background: #121212;
+  }
   .genOffer-section-title {
     font-size: 1.4rem;
   }

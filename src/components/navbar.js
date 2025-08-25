@@ -57,10 +57,10 @@ const Navbar = () => {
         <h2 className="menu-title red">MENU</h2>  
         <ul className="menu-links">
           <li className="slide-in-item" style={{ animationDelay: `0.1s` }} onClick={closeMenu}>
-            <RouterLink to="/Package" className="menu-scroll-link">OUR PACKAGES</RouterLink>
+            <RouterLink to="/Package" className="menu-scroll-link">PACKAGES</RouterLink>
           </li>
           <li className="slide-in-item" style={{ animationDelay: `0.2s` }} onClick={closeMenu}>
-            <RouterLink to="/OfferPage" className="menu-scroll-link">OUR OFFERS</RouterLink>
+            <RouterLink to="/OfferPage" className="menu-scroll-link">OFFERS</RouterLink>
           </li>
           {/* /experience */}
           <li className="slide-in-item" style={{ animationDelay: `0.3s` }} onClick={closeMenu}>

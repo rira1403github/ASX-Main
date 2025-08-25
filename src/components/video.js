@@ -15,7 +15,7 @@ const Video = () => {
           <source src={ashvaReel} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="main-video-overlay"></div>
+        {/* <div className="main-video-overlay"></div> */}
       </div>
     </div>
   );

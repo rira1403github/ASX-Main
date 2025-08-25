@@ -2,7 +2,7 @@
   background-color: #111;
   color: #fff;
   text-align: center;
-  padding: 120px 40px;
+  padding: 80px 40px;
   font-family: 'Raleway', sans-serif;
   width: 100%;
   box-sizing: border-box;
@@ -98,7 +98,7 @@
 
 @media (max-width: 480px) {
   .about-section {
-    padding: 100px 20px;
+    padding: 10px;
   }
   .about-card {
     width: 250px;

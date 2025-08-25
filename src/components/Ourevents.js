@@ -46,7 +46,7 @@ const Packages = () => {
   return (
     <section className="general-packages-section">
       <div className="general-packages-header">
-        <h2 data-aos="fade-right">OUR EVENTS</h2>
+        <h2 data-aos="fade-right">EVENTS</h2>
         <a href="/events" className="know-more" data-aos="fade-left">
           KNOW MORE <span className="big-arrow">&gt;</span>
         </a>
@@ -54,7 +54,7 @@ const Packages = () => {
 
       <Swiper
         modules={[Navigation, Autoplay]}
-        // navigation
+  
         autoplay={{ delay: 2000, disableOnInteraction: false }}
         spaceBetween={25}
         slidesPerView={1.3}

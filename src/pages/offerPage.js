@@ -26,7 +26,7 @@ const OfferPage = () => {
       img: img1,
       desc: "Turn weekdays into adventure days. From Tuesday to Friday, enjoy 15% off on all packages...",
       details: "/WeekOffer",
-      quote: "/eventCele/quote",
+      quote: "/PageContact",
     },
     {
       id: 2,
@@ -34,7 +34,7 @@ const OfferPage = () => {
       img: img2,
       desc: "More people, more thrill, more savings. Groups of 4 or more enjoy a 20% discount on all packages...",
       details: "/GroupOffer",
-      quote: "/corporate/quote",
+      quote: "/PageContact",
     },
     {
       id: 3,
@@ -42,7 +42,7 @@ const OfferPage = () => {
       img: img3,
       desc: "Celebrate festivals with an adventure twist. On festive days, enjoy 15% off on all packages...",
       details: "/FestiveOffer",
-      quote: "/host/quote",
+      quote: "/PageContact",
     },
     {
       id: 4,
@@ -50,7 +50,7 @@ const OfferPage = () => {
       img: img4,
       desc: "Let's create content as thrilling as the ride. At ASX Motodrome, we love partnering with influencers...",
       details: "/InfluenceOffer",
-      quote: "/host/quote",
+      quote: "/PageContact",
     },
   ];
 
@@ -70,7 +70,6 @@ const OfferPage = () => {
             data-aos="fade-up"
             data-aos-delay={Math.min(index * 150, 600)}
           >
-            {/* ✅ clickable + lazy loading */}
             <Link to={event.details}>
               <img
                 src={event.img}

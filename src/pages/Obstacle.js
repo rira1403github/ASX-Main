@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import maincorp from "../assets/Packages/ObstacleP.png";
+import maincorp from "../assets/Packages/ObstacleP.webp";
 
 const Obstacle = () => {
   const [isMobile, setIsMobile] = useState(false);
