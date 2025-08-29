@@ -47,7 +47,7 @@ const EventCor = () => {
         <blockquote className="eventCor-quote" data-aos="fade-up">
           “FUEL TEAMWORK WITH THRILL AND ADVENTURE.”
         </blockquote>
-        <p className="eventCor-text" data-aos="fade-up" data-aos-delay="200">
+        <p className="eventCor-text" data-aos="fade-up" data-aos-delay="100">
           Step away from routine and recharge your team at ASX Motodrome. Whether it’s a small group of 5 or a large corporate gathering of 200+, we curate stress-free, high-energy outings tailored to your needs. From burnout-busting off-road rides to team bonding games, adventure packages, and curated lunches — we specialize in designing experiences that inspire, connect, and energize.
         </p>
       </div>
@@ -125,7 +125,7 @@ const EventCor = () => {
           OUR GALLERY OF EVENTS
         </h3>
         <div className="gallery-grid">
-          <div className="gallery-item" data-aos="fade-up" data-aos-delay="200">
+          <div className="gallery-item" data-aos="fade-up" data-aos-delay="100">
             <img src={lastImg} alt="Gallery Event" />
           </div>
         </div>

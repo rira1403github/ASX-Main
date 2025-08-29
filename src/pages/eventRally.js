@@ -5,7 +5,7 @@ import "./eventRally.css";
 
 const EventRally = () => {
   useEffect(() => {
-    AOS.init({ duration: 1200, once: true });
+    AOS.init({ duration: 800, once: true });
   }, []);
 
   return (
@@ -24,7 +24,7 @@ const EventRally = () => {
         <p
           className="eventRally-text"
           data-aos="fade-up"
-          data-aos-delay="200"
+          data-aos-delay="100"
         >
           Workshops, off-roading rallies, championships, or adventure-themed
           gatherings — whatever you have in mind, ASX Motodrome is the perfect

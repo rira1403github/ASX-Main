@@ -13,7 +13,7 @@ const ProDriver = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 800, once: true });
     const handleResize = () => setIsMobile(window.innerWidth < 768);
     handleResize();
     window.addEventListener("resize", handleResize);
@@ -66,7 +66,7 @@ const facilities = [
         <blockquote className="gPackages-quote" data-aos="fade-up">
           “Learn. Drive. Conquer.”
         </blockquote>
-        <p className="gPackages-text" data-aos="fade-up" data-aos-delay="200">
+        <p className="gPackages-text" data-aos="fade-up" data-aos-delay="100">
           Take your first step into off-road driving with our Pro Drive Training package. This 5-minute self-drive session comes with expert guidance and real-time feedback as you navigate Level 1 obstacles like trenches, logs, and rock gardens. Ideal for beginners, this package builds confidence and skill while keeping the thrill alive.
         </p>
         <p className="gPackages-subtext" data-aos="fade-up"> *All prices are exclusive of 18% GST.</p>

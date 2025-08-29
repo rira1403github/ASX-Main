@@ -58,7 +58,7 @@ const Events = () => {
             className="event-card"
             key={event.id}
             data-aos="fade-up"
-            data-aos-delay={index * 150}
+            data-aos-delay={index * 100}
           >
             <Link to={event.details}>
               <img

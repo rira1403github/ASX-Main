@@ -78,7 +78,7 @@ const GroupOffer = () => {
         <div
           className="genOffer-text"
           data-aos="fade-up"
-          data-aos-delay="200"
+          data-aos-delay="100"
         >
           <p className="genOffer-subtext">
             Groups of 4 or more enjoy a 20% discount on all packages:

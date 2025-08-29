@@ -40,7 +40,7 @@ const WeekDayOffer = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, 
+      duration: 800, 
       easing: "ease-in-out",
       once: true, 
       offset: 100, 
@@ -78,7 +78,7 @@ const WeekDayOffer = () => {
         <div
           className="genOffer-text"
           data-aos="fade-up"
-          data-aos-delay="200"
+          data-aos-delay="100"
         >
           <p className="genOffer-subtext">
             From Tuesday to Friday, enjoy 15% off on all packages:

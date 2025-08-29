@@ -20,7 +20,7 @@ const Celebrations = () => {
       <div className="celebrations-hero">
         <div className="hero-overlay">
           <h1 data-aos="fade-up">CELEBRATE LIFE’S MILESTONES</h1>
-          <h2 data-aos="fade-up" data-aos-delay="200">
+          <h2 data-aos="fade-up" data-aos-delay="100">
             WITH ADRENALINE.
           </h2>
         </div>
@@ -33,11 +33,11 @@ const Celebrations = () => {
         <blockquote
           className="celebrations-quote"
           data-aos="fade-up"
-          data-aos-delay="200"
+          data-aos-delay="150"
         >
           “Celebrate life’s milestones with adrenaline.”
         </blockquote>
-        <p className="celebrations-text" data-aos="fade-up" data-aos-delay="400">
+        <p className="celebrations-text" data-aos="fade-up" data-aos-delay="200">
           Make your special day truly unforgettable at{" "}
           <span className="highlight">ASX Motodrome</span>. From theme-based
           birthdays to milestone celebrations, we take care of everything — you
@@ -57,19 +57,19 @@ const Celebrations = () => {
             <img src={img1} alt="Warm Welcome" />
             <p>Warm Welcome</p>
           </div>
-          <div className="journey-card" data-aos="zoom-in" data-aos-delay="100">
+          <div className="journey-card" data-aos="zoom-in" data-aos-delay="50">
             <img src={img2} alt="Lunch" />
             <p>Lunch</p>
           </div>
-          <div className="journey-card" data-aos="zoom-in" data-aos-delay="200">
+          <div className="journey-card" data-aos="zoom-in" data-aos-delay="100">
             <img src={img3} alt="Adrenaline Fueled Ride" />
             <p>Adrenaline Fueled Ride</p>
           </div>
-          <div className="journey-card" data-aos="zoom-in" data-aos-delay="300">
+          <div className="journey-card" data-aos="zoom-in" data-aos-delay="150">
             <img src={img4} alt="Professional Photography" />
             <p>Professional Photography</p>
           </div>
-          <div className="journey-card" data-aos="zoom-in" data-aos-delay="400">
+          <div className="journey-card" data-aos="zoom-in" data-aos-delay="200">
             <img src={img5} alt="Celebration" />
             <p>Celebration</p>
           </div>

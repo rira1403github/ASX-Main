@@ -122,7 +122,7 @@ const Blog = () => {
         >
           {testimonials.map((item, index) => (
             <SwiperSlide key={index}>
-              <h3 data-aos="fade-up" data-aos-delay={index * 150}>{item}</h3>
+              <h3 data-aos="fade-up" data-aos-delay={index * 100}>{item}</h3>
             </SwiperSlide>
           ))}
         </Swiper>

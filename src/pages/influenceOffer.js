@@ -39,7 +39,7 @@ const InfluenceOffer = () => {
   });
 
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true, offset: 100 });
+    AOS.init({ duration: 800, once: true, offset: 100 });
   }, []);
 
   const handleChange = (e) => {
