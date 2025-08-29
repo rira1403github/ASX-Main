@@ -45,14 +45,14 @@ const Navbar = () => {
           </a>
         </div>
         <div className="navbar-icon">
-          <FiSearch />
+          {/* <FiSearch /> */}
         </div>
       </nav>
 
       <div ref={menuRef} className={`menu-overlay ${isMenuOpen ? 'slide-out' : ''}`}>
-        <div className="menu-close" onClick={closeMenu}>
-          <FiX />
-        </div>
+        {/* <div className="menu-close" onClick={closeMenu}>
+          <FiX /> 
+        </div> */}
 
         <h2 className="menu-title red">MENU</h2>  
         <ul className="menu-links">
@@ -62,7 +62,6 @@ const Navbar = () => {
           <li className="slide-in-item" style={{ animationDelay: `0.2s` }} onClick={closeMenu}>
             <RouterLink to="/OfferPage" className="menu-scroll-link">OFFERS</RouterLink>
           </li>
-          {/* /experience */}
           <li className="slide-in-item" style={{ animationDelay: `0.3s` }} onClick={closeMenu}>
             <RouterLink to="/events" className="menu-scroll-link">EVENTS</RouterLink>
           </li>

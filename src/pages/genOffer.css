@@ -14,7 +14,7 @@
   position: relative;
   height: 100vh;
   background: center/cover no-repeat;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   display: flex;
@@ -51,7 +51,7 @@
 }
 
 .genOffer-content {
-  padding: 3rem 2rem;
+  padding: 2rem 1rem 1rem;
   text-align: center;
   max-width: 750px;
   margin: auto;
@@ -227,7 +227,7 @@
 
 @media (max-width: 1024px) {
   .genOffer-content {
-    padding: 2rem 1.5rem;
+    padding: 1rem 1.5rem;
   }
   .genOffer-experience-container {
     padding: 1.5rem;
@@ -280,5 +280,8 @@
   }
   .genoffer-highlight {
     text-align: right;
+  }
+  .genOffer-content {
+    padding: 0rem 1rem;
   }
 }

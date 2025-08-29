@@ -42,6 +42,8 @@
 .menu-overlay {
   position: fixed;
   top: 0;
+  left: 0 !important;
+  right: auto !important;
   height: 100vh;
   width: 100vw;
   background: rgba(0, 0, 0, 0.85);
@@ -57,24 +59,15 @@
 
 @media (min-width: 768px) {
   .menu-overlay {
-    right: 0;
-    left: auto;
+    right: auto;
+    left: 0;
     width: 400px;
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
 }
 
 .menu-overlay.slide-out {
   transform: translateX(0);
-}
-
-.menu-close {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 26px;
-  cursor: pointer;
-  color: white;
 }
 
 .menu-title {

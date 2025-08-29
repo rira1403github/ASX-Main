@@ -68,7 +68,7 @@ const OfferPage = () => {
             key={event.id}
             role="listitem"
             data-aos="fade-up"
-            data-aos-delay={Math.min(index * 150, 600)}
+            data-aos-delay={Math.min(index * 100, 600)}
           >
             <Link to={event.details}>
               <img

@@ -69,7 +69,7 @@ const InfluenceOffer = () => {
         <blockquote className="genOffer-quote" data-aos="fade-up">
           “Let’s create content as thrilling as the ride.”
         </blockquote>
-        <div className="genOffer-text" data-aos="fade-up" data-aos-delay="200">
+        <div className="genOffer-text" data-aos="fade-up" data-aos-delay="100">
           <p className="genOffer-subtext" style={{ textAlign: "justify"}}>
             At ASX Motodrome, we love partnering with influencers, content
             creators, and storytellers who share our passion for adventure and
