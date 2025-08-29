@@ -36,7 +36,7 @@ const AboutUs = () => {
           of adventure.
         </p>
 
-        <div className="section-header" data-aos="fade-up">
+        <div className="section-header" data-aos="fade-up" id="whoweare">
           <h2 className="about-title">WHO WE ARE</h2>
         </div>
 

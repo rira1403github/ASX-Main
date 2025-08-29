@@ -72,19 +72,6 @@ const Navbar = () => {
           <li className="slide-in-item" style={{ animationDelay: `0.5s` }} onClick={closeMenu}>
             <RouterLink to="/aboutUs" className="menu-scroll-link">ABOUT US</RouterLink>
           </li>
-          {/* <li className="slide-in-item" style={{ animationDelay: `0.6s` }}>
-            <ScrollLink
-              to="book"
-              smooth={true}
-              offset={-70}
-              duration={500}
-              duration={}
-              onClick={closeMenu}
-              className="menu-scroll-link"
-            >
-              ABOUT US
-            </ScrollLink>
-          </li> */}
           <li className="slide-in-item" style={{ animationDelay: `0.6s` }} onClick={closeMenu}>
             <RouterLink to="/pageContact" className="menu-scroll-link">CONTACT US</RouterLink>
           </li>
